@@ -319,27 +319,23 @@ function playground_text(playground) {
     function set_theme(theme, store = true) {
         let ace_theme;
 
-        // if (theme == 'coal' || theme == 'navy') {
-        //     stylesheets.ayuHighlight.disabled = true;
-        //     stylesheets.tomorrowNight.disabled = false;
-        //     stylesheets.highlight.disabled = true;
+        if (theme == 'coal' || theme == 'navy') {
+            stylesheets.ayuHighlight.disabled = true;
+            stylesheets.tomorrowNight.disabled = true;
+            stylesheets.highlight.disabled = false;
 
-        //     ace_theme = "ace/theme/tomorrow_night";
-        // } else if (theme == 'ayu') {
-        //     stylesheets.ayuHighlight.disabled = false;
-        //     stylesheets.tomorrowNight.disabled = true;
-        //     stylesheets.highlight.disabled = true;
-        //     ace_theme = "ace/theme/tomorrow_night";
-        // } else {
-        //     stylesheets.ayuHighlight.disabled = true;
-        //     stylesheets.tomorrowNight.disabled = true;
-        //     stylesheets.highlight.disabled = false;
-        //     ace_theme = "ace/theme/dawn";
-        // }
-        stylesheets.ayuHighlight.disabled = true;
-        stylesheets.tomorrowNight.disabled = true;
-        stylesheets.highlight.disabled = false;
-        ace_theme = "ace/theme/dawn"
+            ace_theme = "ace/theme/tomorrow_night";
+        } else if (theme == 'ayu') {
+            stylesheets.ayuHighlight.disabled = false;
+            stylesheets.tomorrowNight.disabled = true;
+            stylesheets.highlight.disabled = true;
+            ace_theme = "ace/theme/tomorrow_night";
+        } else {
+            stylesheets.ayuHighlight.disabled = true;
+            stylesheets.tomorrowNight.disabled = true;
+            stylesheets.highlight.disabled = false;
+            ace_theme = "ace/theme/dawn";
+        }
 
 
         setTimeout(function () {
