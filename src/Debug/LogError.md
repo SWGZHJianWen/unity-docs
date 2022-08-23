@@ -1,1 +1,1 @@
-# LogError
+# Debug.LogError

@@ -1,1 +1,1 @@
-# Normalize
+# Vector3.Normalize

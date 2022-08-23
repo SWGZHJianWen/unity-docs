@@ -155,10 +155,10 @@
 </div>
 <h2 id="示例"><a class="header" href="#示例">示例</a></h2>
 <pre><code class="language-csharp"></code></pre>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="angle"><a class="header" href="#angle">Angle</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="normalize"><a class="header" href="#normalize">Normalize</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="vector3angle"><a class="header" href="#vector3angle">Vector3.Angle</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="vector3normalize"><a class="header" href="#vector3normalize">Vector3.Normalize</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="quaternion"><a class="header" href="#quaternion">Quaternion</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="euler"><a class="header" href="#euler">Euler</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="quaternioneuler"><a class="header" href="#quaternioneuler">Quaternion.Euler</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="input"><a class="header" href="#input">Input</a></h1>
 <ul>
 <li>鼠标
@@ -568,8 +568,8 @@ public class ExampleScript : MonoBehaviour
     }
 }
 </code></pre>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="time-1"><a class="header" href="#time-1">time</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="timescale"><a class="header" href="#timescale">timeScale</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="timetime"><a class="header" href="#timetime">Time.time</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="timetimescale"><a class="header" href="#timetimescale">Time.timeScale</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="charactercontroller"><a class="header" href="#charactercontroller">CharacterController</a></h1>
 <p>利用 <a href="CharacterController/./README.html">CharacterController</a> 组件，可以更容易地处理有碰撞的运动，同时不需处理刚体。</p>
 <ul>
@@ -738,11 +738,11 @@ public class ExampleScript : MonoBehaviour
 <p>上述示例也许并不好用，因为 <code>isGround</code> 只有角色移动时（调用 <code>SimpleMove</code> 或 <code>Move</code>时）才会进行检测，并且 <code>CharacterController</code> 的 <code>Skin Width</code> 也会对其影响。</p>
 <p>所以建议自己实现地面检测功能，方法有多种，其中使用</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="transform"><a class="header" href="#transform">Transform</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="rotate"><a class="header" href="#rotate">Rotate</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="translate"><a class="header" href="#translate">Translate</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="lookat"><a class="header" href="#lookat">LookAt</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="transformrotate"><a class="header" href="#transformrotate">Transform.Rotate</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="transformtranslate"><a class="header" href="#transformtranslate">Transform.Translate</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="transformlookat"><a class="header" href="#transformlookat">Transform.LookAt</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="rigidbody"><a class="header" href="#rigidbody">Rigidbody</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="addforce"><a class="header" href="#addforce">AddForce</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="rigidbodyaddforce"><a class="header" href="#rigidbodyaddforce">Rigidbody.AddForce</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="random"><a class="header" href="#random">Random</a></h1>
 <p>生成随机数据（点、旋转、状态、浮点数等）</p>
 <ul>
@@ -864,8 +864,8 @@ public class Example : MonoBehaviour
 <h2 id="示例-17"><a class="header" href="#示例-17">示例</a></h2>
 <pre><code class="language-csharp"></code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="gameobjectgetcomponentinchildren"><a class="header" href="#gameobjectgetcomponentinchildren">GameObject.GetComponentInChildren</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="addcomponent"><a class="header" href="#addcomponent">AddComponent</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="setactive"><a class="header" href="#setactive">SetActive</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="gameobjectaddcomponent"><a class="header" href="#gameobjectaddcomponent">GameObject.AddComponent</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="gameobjectsetactive"><a class="header" href="#gameobjectsetactive">GameObject.SetActive</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="resources"><a class="header" href="#resources">Resources</a></h1>
 <p>用于查找和访问资源等对象。</p>
 <ul>
@@ -1032,7 +1032,7 @@ public class ExampleScript : MonoBehaviour
     }
 }
 </code></pre>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="raycast"><a class="header" href="#raycast">Raycast</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="physicsraycast"><a class="header" href="#physicsraycast">Physics.Raycast</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="navmeshagent"><a class="header" href="#navmeshagent">NavMeshAgent</a></h1>
 <p>导航网格代理。</p>
 <p>将此组件附加在游戏中的某个移动角色，以允许其使用导航网格在场景中寻路。</p>
@@ -1050,7 +1050,7 @@ public class ExampleScript : MonoBehaviour
 </tbody></table>
 </div>
 <h2 id="示例-23"><a class="header" href="#示例-23">示例</a></h2>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="resetpath"><a class="header" href="#resetpath">ResetPath</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="navmeshagentresetpath"><a class="header" href="#navmeshagentresetpath">NavMeshAgent.ResetPath</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="scenemanager"><a class="header" href="#scenemanager">SceneManager</a></h1>
 <p>场景管理</p>
 <ul>
@@ -1069,7 +1069,7 @@ public class ExampleScript : MonoBehaviour
 <tr><td>sceneName</td><td>string</td><td>与 <code>sceneBuildIndex</code> 二选一</td><td>场景的索引（在 <code>Build Settings</code> ）</td></tr>
 <tr><td>mode</td><td>LoadSceneMode</td><td>否</td><td>加载场景的方式，默认为单模式。<br>单模式（销毁当前场景）：<code>LoadSceneMode.Single</code><br>附加模式（不销毁当前场景）：<code>LoadSceneMode.Additive</code></td></tr>
 </tbody></table>
-</div><div style="break-before: page; page-break-before: always;"></div><h1 id="dontdestoryonload"><a class="header" href="#dontdestoryonload">DontDestoryOnLoad</a></h1>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="scenemanagerdontdestoryonload"><a class="header" href="#scenemanagerdontdestoryonload">SceneManager.DontDestoryOnLoad</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="animator"><a class="header" href="#animator">Animator</a></h1>
 <p>用于控制 Mecanim 动画系统的接口。</p>
 <ul>
@@ -1131,7 +1131,7 @@ public class ExampleScript : MonoBehaviour
 <tr><td>name</td><td>string</td><td>与 <code>id</code> 二选一</td><td>参数名称</td></tr>
 <tr><td>id</td><td>int</td><td>与 <code>name</code> 二选一</td><td>参数 ID</td></tr>
 </tbody></table>
-</div><div style="break-before: page; page-break-before: always;"></div><h1 id="getcurrentanimatorstateinfo"><a class="header" href="#getcurrentanimatorstateinfo">GetCurrentAnimatorStateinfo</a></h1>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="animatorgetcurrentanimatorstateinfo"><a class="header" href="#animatorgetcurrentanimatorstateinfo">Animator.GetCurrentAnimatorStateinfo</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="animation"><a class="header" href="#animation">Animation</a></h1>
 <p>动画组件，用于播放动画</p>
 <ul>
@@ -1148,17 +1148,17 @@ public class ExampleScript : MonoBehaviour
 <tr><td>animation</td><td>string</td><td>否</td><td>动画名称，不指定则播放默认动画</td></tr>
 <tr><td>mode</td><td>PlayMode</td><td>否</td><td>播放模式，默认为 <code>StopSameLayer</code><br><code>StopSameLayer</code>：播放前停止在相同层启动的所有动画<br><code>StopAll</code>：播放前x停止使用此组件启动的所有动画</td></tr>
 </tbody></table>
-</div><div style="break-before: page; page-break-before: always;"></div><h1 id="stop"><a class="header" href="#stop">Stop</a></h1>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="animationstop"><a class="header" href="#animationstop">Animation.Stop</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="audiosource"><a class="header" href="#audiosource">AudioSource</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="play"><a class="header" href="#play">Play</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="stop-1"><a class="header" href="#stop-1">Stop</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="pause"><a class="header" href="#pause">Pause</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="playclipatpoint"><a class="header" href="#playclipatpoint">PlayClipAtPoint</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="audiosourceplay"><a class="header" href="#audiosourceplay">AudioSource.Play</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="audiosourcestop"><a class="header" href="#audiosourcestop">AudioSource.Stop</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="audiosourcepause"><a class="header" href="#audiosourcepause">AudioSource.Pause</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="audiosourceplayclipatpoint"><a class="header" href="#audiosourceplayclipatpoint">AudioSource.PlayClipAtPoint</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="debug"><a class="header" href="#debug">Debug</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="log"><a class="header" href="#log">Log</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="logwarning"><a class="header" href="#logwarning">LogWarning</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="logerror"><a class="header" href="#logerror">LogError</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="drawline"><a class="header" href="#drawline">DrawLine</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="debuglog"><a class="header" href="#debuglog">Debug.Log</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="debuglogwarning"><a class="header" href="#debuglogwarning">Debug.LogWarning</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="debuglogerror"><a class="header" href="#debuglogerror">Debug.LogError</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="debugdrawline"><a class="header" href="#debugdrawline">Debug.DrawLine</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="推荐阅读"><a class="header" href="#推荐阅读">推荐阅读</a></h1>
 <p><a href="https://docs.unity.cn/cn/current/ScriptReference/">Unity 官方 API 文档（中）</a></p>
 <p><a href="https://docs.unity3d.com/2021.3/Documentation/ScriptReference/">Unity 官方 API 文档（英）</a></p>

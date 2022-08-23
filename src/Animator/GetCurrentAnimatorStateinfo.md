@@ -1,1 +1,1 @@
-# GetCurrentAnimatorStateinfo
+# Animator.GetCurrentAnimatorStateinfo

@@ -1,1 +1,1 @@
-# timeScale
+# Time.timeScale

@@ -1,1 +1,1 @@
-# AddComponent
+# GameObject.AddComponent
