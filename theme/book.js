@@ -322,7 +322,7 @@ function playground_text(playground) {
         if (theme == 'coal' || theme == 'navy') {
             stylesheets.ayuHighlight.disabled = true;
             stylesheets.tomorrowNight.disabled = true;
-            stylesheets.highlight.disabled = true;
+            stylesheets.highlight.disabled = false;
 
             ace_theme = "ace/theme/tomorrow_night";
         } else if (theme == 'ayu') {
