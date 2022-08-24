@@ -135,7 +135,7 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="vector3distance"><a class="header" href="#vector3distance">Vector3.Distance</a></h1>
-<p>计算返回两点间的距离。</p>
+<p>计算两点间距离。</p>
 <h2 id="定义"><a class="header" href="#定义">定义</a></h2>
 <pre><code class="language-csharp">public static float Distance(Vector3 a, Vector3 b);
 </code></pre>
@@ -146,7 +146,24 @@
 </tbody></table>
 </div>
 <h2 id="示例"><a class="header" href="#示例">示例</a></h2>
-<pre><code class="language-csharp"></code></pre>
+<pre><code class="language-csharp">using UnityEngine;
+
+public class ExampleScript : MonoBehaviour
+{
+    public Transform target;
+    
+    private bool IsClose()
+    {
+        if (target)
+        {
+            float distance = Vector3.Distance(transform.position, target.position);
+            return distance &lt; 10.0f;
+        }
+
+        return false;
+    }
+}
+</code></pre>
 
                     </main>
 

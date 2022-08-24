@@ -135,6 +135,31 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="vector3normalize"><a class="header" href="#vector3normalize">Vector3.Normalize</a></h1>
+<p>对向量进行标准化，使其方向保持不变，但长度变为 1.0，这个过程也称为归一化。</p>
+<h2 id="定义"><a class="header" href="#定义">定义</a></h2>
+<pre><code class="language-csharp">public static Vector3 Normalize(Vector3 value);
+</code></pre>
+<h2 id="参数"><a class="header" href="#参数">参数</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>参数名</th><th>类型</th><th>必要</th><th>说明</th></tr></thead><tbody>
+<tr><td>value</td><td>Vector3</td><td>是</td><td>待归一化向量</td></tr>
+</tbody></table>
+</div>
+<h2 id="示例"><a class="header" href="#示例">示例</a></h2>
+<pre><code class="language-csharp">using UnityEngine;
+
+public class ExampleScript : MonoBehaviour
+{
+    [SerializeField]
+    private Transform _player;
+    
+    private void Update()
+    {
+        Vector3 direction = _player.position - transform.position;
+        direction.Normalize();
+        transform.Translate(direction * Time.deltaTime);
+    }
+}
+</code></pre>
 
                     </main>
 

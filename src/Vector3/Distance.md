@@ -1,6 +1,6 @@
 # Vector3.Distance
 
-计算返回两点间的距离。
+计算两点间距离。
 
 ## 定义
 
@@ -18,5 +18,18 @@ public static float Distance(Vector3 a, Vector3 b);
 ## 示例
 
 ```csharp
+using UnityEngine;
+
+public class ExampleScript : MonoBehaviour
+{
+    public Transform target;
+    
+    private bool IsClose()
+    {
+        if (!target) return false;
+        var distance = Vector3.Distance(transform.position, target.position);
+        return distance < 10.0f;
+    }
+}
 ```
 
