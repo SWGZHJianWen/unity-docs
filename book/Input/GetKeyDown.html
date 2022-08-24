@@ -139,12 +139,14 @@
 <h2 id="定义"><a class="header" href="#定义">定义</a></h2>
 <pre><code class="language-csharp">public static bool GetKeyDown(string name);
 </code></pre>
+<div class="table-wrapper"><table><thead><tr><th>参数名</th><th>类型</th><th>必要</th><th>说明</th></tr></thead><tbody>
+<tr><td>name</td><td>string</td><td>是</td><td>按键对应代码，详见 <a href="./appendix.html#%E6%8C%89%E9%94%AE%E5%90%8D%E7%A7%B0%E8%A1%A8">附录 #按键名称表</a></td></tr>
+</tbody></table>
+</div>
 <pre><code class="language-csharp">public static bool GetKeyDown(KeyCode key);
 </code></pre>
-<h2 id="参数"><a class="header" href="#参数">参数</a></h2>
 <div class="table-wrapper"><table><thead><tr><th>参数名</th><th>类型</th><th>必要</th><th>说明</th></tr></thead><tbody>
-<tr><td>name</td><td>string</td><td>与 <code>key</code> 二选一</td><td>按键对应代码，详见 <a href="./appendix.html#%E6%8C%89%E9%94%AE%E5%90%8D%E7%A7%B0%E8%A1%A8">按键名称表</a></td></tr>
-<tr><td>key</td><td>KeyCode</td><td>与 <code>name</code> 二选一</td><td>按键对应字符串名称，详见 <a href="./appendix.html#%E6%8C%89%E9%94%AE%E4%BB%A3%E7%A0%81%E8%A1%A8">按键代码表</a></td></tr>
+<tr><td>key</td><td>KeyCode</td><td>是</td><td>按键对应字符串名称，详见 <a href="./appendix.html#%E6%8C%89%E9%94%AE%E4%BB%A3%E7%A0%81%E8%A1%A8">附录 #按键代码表</a></td></tr>
 </tbody></table>
 </div>
 <h2 id="示例"><a class="header" href="#示例">示例</a></h2>

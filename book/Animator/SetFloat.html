@@ -139,12 +139,17 @@
 <h2 id="定义"><a class="header" href="#定义">定义</a></h2>
 <pre><code class="language-csharp">public void SetFloat(string name, float value, float dampTime, float deltaTime);
 </code></pre>
+<div class="table-wrapper"><table><thead><tr><th>参数名</th><th>类型</th><th>必要</th><th>说明</th></tr></thead><tbody>
+<tr><td>name</td><td>string</td><td>是</td><td>参数名称</td></tr>
+<tr><td>value</td><td>float</td><td>是</td><td>新的参数值</td></tr>
+<tr><td>dampTime</td><td>float</td><td>否</td><td>阻尼器总时间</td></tr>
+<tr><td>deltaTime</td><td>float</td><td>否</td><td>基于阻尼器的增量时间</td></tr>
+</tbody></table>
+</div>
 <pre><code class="language-csharp">public void SetFloat(int id, float value, float dampTime, float deltaTime);
 </code></pre>
-<h2 id="参数"><a class="header" href="#参数">参数</a></h2>
 <div class="table-wrapper"><table><thead><tr><th>参数名</th><th>类型</th><th>必要</th><th>说明</th></tr></thead><tbody>
-<tr><td>name</td><td>string</td><td>与 <code>id</code> 二选一</td><td>参数名称</td></tr>
-<tr><td>id</td><td>int</td><td>与 <code>name</code> 二选一</td><td>参数 ID</td></tr>
+<tr><td>id</td><td>int</td><td>是</td><td>参数 ID</td></tr>
 <tr><td>value</td><td>float</td><td>是</td><td>新的参数值</td></tr>
 <tr><td>dampTime</td><td>float</td><td>否</td><td>阻尼器总时间</td></tr>
 <tr><td>deltaTime</td><td>float</td><td>否</td><td>基于阻尼器的增量时间</td></tr>

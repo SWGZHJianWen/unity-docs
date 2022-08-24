@@ -8,8 +8,6 @@
 public static bool GetButtonDown(string buttonName);
 ```
 
-## 参数
-
 | 参数名     | 类型   | 必要 | 说明                                                         |
 | ---------- | ------ | ---- | ------------------------------------------------------------ |
 | buttonName | string | 是   | 按键对应字符串，如 `"Jump"`、`"Mouse X"`，只能为在 `InputManager` 中定义的轴键，可在 Unity 窗口 `Editor > Project Settings > Input Manager` 中找到。 |

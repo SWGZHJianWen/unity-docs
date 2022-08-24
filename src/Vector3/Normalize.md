@@ -8,8 +8,6 @@
 public static Vector3 Normalize(Vector3 value);
 ```
 
-## 参数
-
 | 参数名 | 类型    | 必要 | 说明         |
 | ------ | ------- | ---- | ------------ |
 | value  | Vector3 | 是   | 待归一化向量 |

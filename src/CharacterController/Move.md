@@ -10,8 +10,6 @@
 public CollisionFlags Move(Vector3 motion);
 ```
 
-## 参数
-
 | 参数名 | 类型    | 必要 | 说明                   |
 | ------ | ------- | ---- | ---------------------- |
 | motion | Vector3 | 是   | 各方向移动的绝对增量值 |

@@ -8,8 +8,6 @@
 private void OnTriggerEnter(Collider other)
 ```
 
-## 参数
-
 | 参数名 | 类型     | 说明                                   |
 | ------ | -------- | -------------------------------------- |
 | other  | Collider | 该碰撞中涉及的其他碰撞体（`Collider`） |

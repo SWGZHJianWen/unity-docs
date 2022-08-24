@@ -143,6 +143,12 @@
     bool instantiateInWorldSpace
 );
 </code></pre>
+<div class="table-wrapper"><table><thead><tr><th>参数名</th><th>类型</th><th>必要</th><th>说明</th></tr></thead><tbody>
+<tr><td>original</td><td>Object</td><td>是</td><td>要克隆的现有对象</td></tr>
+<tr><td>parent</td><td>Transform</td><td>否</td><td>新对象的父对象</td></tr>
+<tr><td>instantiateInWorldSpace</td><td>bool</td><td>否</td><td><code>true</code>：相对于世界空间<br><code>false</code>：相对于父对象</td></tr>
+</tbody></table>
+</div>
 <pre><code class="language-csharp">public static Object Instantiate(
     Object original,
     Vector3 position,
@@ -150,13 +156,11 @@
     Transform parent
 );
 </code></pre>
-<h2 id="参数"><a class="header" href="#参数">参数</a></h2>
 <div class="table-wrapper"><table><thead><tr><th>参数名</th><th>类型</th><th>必要</th><th>说明</th></tr></thead><tbody>
 <tr><td>original</td><td>Object</td><td>是</td><td>要克隆的现有对象</td></tr>
-<tr><td>position</td><td>Vector3</td><td>否</td><td>新对象的位置</td></tr>
-<tr><td>rotation</td><td>Quaternion</td><td>否</td><td>新对象的旋转</td></tr>
+<tr><td>position</td><td>Vector3</td><td>是</td><td>新对象的位置</td></tr>
+<tr><td>rotation</td><td>Quaternion</td><td>是</td><td>新对象的旋转</td></tr>
 <tr><td>parent</td><td>Transform</td><td>否</td><td>新对象的父对象</td></tr>
-<tr><td>instantiateInWorldSpace</td><td>bool</td><td>否</td><td><code>true</code>：相对于世界空间<br><code>false</code>：相对于父对象</td></tr>
 </tbody></table>
 </div>
 <h2 id="示例"><a class="header" href="#示例">示例</a></h2>

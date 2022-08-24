@@ -139,12 +139,15 @@
 <h2 id="定义"><a class="header" href="#定义">定义</a></h2>
 <pre><code class="language-csharp">public static void LoadScene (int sceneBuildIndex, SceneManagement.LoadSceneMode mode= LoadSceneMode.Single);
 </code></pre>
+<div class="table-wrapper"><table><thead><tr><th>参数名</th><th>类型</th><th>必要</th><th>说明</th></tr></thead><tbody>
+<tr><td>sceneBuildIndex</td><td>int</td><td>是</td><td>场景的索引（在 <code>Build Settings</code> ）。</td></tr>
+<tr><td>mode</td><td>LoadSceneMode</td><td>否</td><td>加载场景的方式，默认为单模式。<br>单模式（销毁当前场景）：<code>LoadSceneMode.Single</code><br>附加模式（不销毁当前场景）：<code>LoadSceneMode.Additive</code></td></tr>
+</tbody></table>
+</div>
 <pre><code class="language-csharp">public static void LoadScene (string sceneName, SceneManagement.LoadSceneMode mode= LoadSceneMode.Single);
 </code></pre>
-<h2 id="参数"><a class="header" href="#参数">参数</a></h2>
 <div class="table-wrapper"><table><thead><tr><th>参数名</th><th>类型</th><th>必要</th><th>说明</th></tr></thead><tbody>
-<tr><td>sceneBuildIndex</td><td>int</td><td>与 <code>sceneName</code> 二选一</td><td>场景的名称或路径。</td></tr>
-<tr><td>sceneName</td><td>string</td><td>与 <code>sceneBuildIndex</code> 二选一</td><td>场景的索引（在 <code>Build Settings</code> ）</td></tr>
+<tr><td>sceneName</td><td>string</td><td>是</td><td>场景的名称或路径。</td></tr>
 <tr><td>mode</td><td>LoadSceneMode</td><td>否</td><td>加载场景的方式，默认为单模式。<br>单模式（销毁当前场景）：<code>LoadSceneMode.Single</code><br>附加模式（不销毁当前场景）：<code>LoadSceneMode.Additive</code></td></tr>
 </tbody></table>
 </div>

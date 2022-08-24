@@ -8,20 +8,24 @@
 public Component GetComponent(Type type);
 ```
 
-```csharp
-public T GetComponent();
-```
+| 参数名 | 类型 | 必要 | 说明             |
+| ------ | ----- | ---- | ---------------- |
+| type   | Type  | 是  | 要检索的组件类型 |
+
 
 ```csharp
 public Component GetComponent(string type);
 ```
 
-## 参数
-
 | 参数名 | 类型 | 必要 | 说明             |
 | ------ | ----- | ---- | ---------------- |
-| type   | Type  | 否   | 要检索的组件类型 |
-| type   | string | 否   | 要检索的组件类型 |
+| type   | string | 是  | 要检索的组件类型 |
+
+```csharp
+public T GetComponent<T>();
+```
+
+泛型版本
 
 ## 示例
 

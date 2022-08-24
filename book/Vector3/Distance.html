@@ -139,7 +139,6 @@
 <h2 id="定义"><a class="header" href="#定义">定义</a></h2>
 <pre><code class="language-csharp">public static float Distance(Vector3 a, Vector3 b);
 </code></pre>
-<h2 id="参数"><a class="header" href="#参数">参数</a></h2>
 <div class="table-wrapper"><table><thead><tr><th>参数名</th><th>类型</th><th>必要</th><th>说明</th></tr></thead><tbody>
 <tr><td>a</td><td>Vector3</td><td>是</td><td>a 点</td></tr>
 <tr><td>b</td><td>Vector3</td><td>是</td><td>b 点</td></tr>
@@ -154,13 +153,9 @@ public class ExampleScript : MonoBehaviour
     
     private bool IsClose()
     {
-        if (target)
-        {
-            float distance = Vector3.Distance(transform.position, target.position);
-            return distance &lt; 10.0f;
-        }
-
-        return false;
+        if (!target) return false;
+        var distance = Vector3.Distance(transform.position, target.position);
+        return distance &lt; 10.0f;
     }
 }
 </code></pre>

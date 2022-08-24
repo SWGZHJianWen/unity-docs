@@ -8,8 +8,6 @@
 public static T Load(string path);
 ```
 
-## 参数
-
 | 参数名 | 类型   | 必要 | 说明     |
 | ------ | ------ | ---- | -------- |
 | path   | string | 是   | 资产路径 |

@@ -13,6 +13,12 @@ public static Object Instantiate(
 );
 ```
 
+| 参数名                  | 类型      | 必要 | 说明                                            |
+| ----------------------- | --------- | ---- | ----------------------------------------------- |
+| original                | Object    | 是   | 要克隆的现有对象                                |
+| parent                  | Transform | 否   | 新对象的父对象                                  |
+| instantiateInWorldSpace | bool      | 否   | `true`：相对于世界空间<br>`false`：相对于父对象 |
+
 ```csharp
 public static Object Instantiate(
     Object original,
@@ -22,15 +28,12 @@ public static Object Instantiate(
 );
 ```
 
-## 参数
-
-| 参数名                  | 类型       | 必要 | 说明                                            |
-| ----------------------- | ---------- | ---- | ----------------------------------------------- |
-| original                | Object     | 是   | 要克隆的现有对象                                |
-| position                | Vector3    | 否   | 新对象的位置                                    |
-| rotation                | Quaternion | 否   | 新对象的旋转                                    |
-| parent                  | Transform  | 否   | 新对象的父对象                                  |
-| instantiateInWorldSpace | bool       | 否   | `true`：相对于世界空间<br>`false`：相对于父对象 |
+| 参数名   | 类型       | 必要 | 说明             |
+| -------- | ---------- | ---- | ---------------- |
+| original | Object     | 是   | 要克隆的现有对象 |
+| position | Vector3    | 是   | 新对象的位置     |
+| rotation | Quaternion | 是   | 新对象的旋转     |
+| parent   | Transform  | 否   | 新对象的父对象   |
 
 ## 示例
 
