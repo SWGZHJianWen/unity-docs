@@ -259,26 +259,23 @@ public class Example : MonoBehaviour
 }
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="input"><a class="header" href="#input">Input</a></h1>
-<ul>
-<li>鼠标
-<ul>
-<li><a href="Input/./GetMouseButton.html">GetMouseButton</a></li>
-<li><a href="Input/./GetMouseButtonDown.html">GetMouseButtonDown</a></li>
-<li><a href="Input/./GetMouseButtonUp.html">GetMouseButtonUp</a></li>
-</ul>
-</li>
-<li>键盘
-<ul>
-<li><a href="Input/./GetButton.html">GetButton</a></li>
-<li><a href="Input/./GetButtonDown.html">GetButtonDown</a></li>
-<li><a href="Input/./GetButtonUp.html">GetButtonUp</a></li>
-<li><a href="Input/./GetKey.html">GetKey</a></li>
-<li><a href="Input/./GetKeyDown.html">GetKeyDown</a></li>
-<li><a href="Input/./GetKeyUp.html">GetKeyUp</a></li>
-</ul>
-</li>
-</ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="inputgetmousebutton"><a class="header" href="#inputgetmousebutton">Input.GetMouseButton</a></h1>
+<h2 id="鼠标"><a class="header" href="#鼠标">鼠标</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>方法</th><th>说明</th></tr></thead><tbody>
+<tr><td><a href="Input/./GetMouseButton.html">GetMouseButton</a></td><td><strong>每一帧</strong>鼠标处于按下状态返回 <code>true</code></td></tr>
+<tr><td><a href="Input/./GetMouseButtonDown.html">GetMouseButtonDown</a></td><td>鼠标按下的<strong>那一帧</strong>返回 <code>true</code></td></tr>
+<tr><td><a href="Input/./GetMouseButtonUp.html">GetMouseButtonUp</a></td><td>鼠标抬起的<strong>那一帧</strong>返回 <code>true</code></td></tr>
+</tbody></table>
+</div>
+<h2 id="键盘"><a class="header" href="#键盘">键盘</a></h2>
+<div class="table-wrapper"><table><thead><tr><th>方法</th><th>说明</th></tr></thead><tbody>
+<tr><td><a href="Input/./GetButton.html">GetButton</a></td><td><strong>每一帧</strong>键盘处于按下状态返回 <code>true</code></td></tr>
+<tr><td><a href="Input/./GetButtonDown.html">GetButtonDown</a></td><td>键盘按下的<strong>那一帧</strong>返回 <code>true</code></td></tr>
+<tr><td>GetButtonUp</td><td>键盘抬起的<strong>那一帧</strong>返回 <code>true</code></td></tr>
+<tr><td>GetKey</td><td><strong>每一帧</strong>键盘处于按下状态返回 <code>true</code></td></tr>
+<tr><td>GetKeyDown</td><td>键盘按下的<strong>那一帧</strong>返回 <code>true</code></td></tr>
+<tr><td>GetKeyUp</td><td>键盘抬起的<strong>那一帧</strong>返回 <code>true</code></td></tr>
+</tbody></table>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="inputgetmousebutton"><a class="header" href="#inputgetmousebutton">Input.GetMouseButton</a></h1>
 <p><strong>每一帧</strong>鼠标处于按下状态都会返回 <code>true</code></p>
 <h2 id="定义-4"><a class="header" href="#定义-4">定义</a></h2>
 <pre><code class="language-csharp">public static bool GetMouseButton(int button);
@@ -637,10 +634,12 @@ public class ExampleScript : MonoBehaviour
 <li><code>KeyCode.Mouse0</code>：鼠标左键</li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="time"><a class="header" href="#time">Time</a></h1>
-<ul>
-<li><a href="Time/./deltaTime.html">帧时间间隔</a></li>
-</ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="timedeltatime"><a class="header" href="#timedeltatime">Time.deltaTime</a></h1>
+<div class="table-wrapper"><table><thead><tr><th>属性</th><th>说明</th></tr></thead><tbody>
+<tr><td><a href="Time/./deltaTime.html">deltaTime</a></td><td>帧间隔时间（秒）</td></tr>
+<tr><td><a href="Time/./time.html">time</a></td><td></td></tr>
+<tr><td><a href="Time/./timeScale.html">timeScale</a></td><td></td></tr>
+</tbody></table>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="timedeltatime"><a class="header" href="#timedeltatime">Time.deltaTime</a></h1>
 <p>上一帧到当前帧的时间间隔（秒）</p>
 <h2 id="定义-13"><a class="header" href="#定义-13">定义</a></h2>
 <pre><code class="language-csharp">public static float deltaTime;
@@ -669,7 +668,21 @@ public class ExampleScript : MonoBehaviour
 }
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="timetime"><a class="header" href="#timetime">Time.time</a></h1>
+<p>游戏自启动以来的时间（秒）。</p>
+<h2 id="定义-14"><a class="header" href="#定义-14">定义</a></h2>
+<pre><code class="language-csharp">public static float time;
+</code></pre>
+<h2 id="示例-14"><a class="header" href="#示例-14">示例</a></h2>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="timetimescale"><a class="header" href="#timetimescale">Time.timeScale</a></h1>
+<p>时间流逝速度缩放。</p>
+<p>默认为 <code>1</code>，大于 <code>1</code> 加速，小于 <code>1</code> 减速，<code>0</code> 表示暂停，负值被忽略。</p>
+<p>可用于慢动作效果或加速效果。</p>
+<h2 id="定义-15"><a class="header" href="#定义-15">定义</a></h2>
+<pre><code class="language-csharp">public static float timeScale;
+</code></pre>
+<h2 id="示例-15"><a class="header" href="#示例-15">示例</a></h2>
+<pre><code class="language-csharp">
+</code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="charactercontroller"><a class="header" href="#charactercontroller">CharacterController</a></h1>
 <p>利用 <a href="CharacterController/./README.html">CharacterController</a> 组件，可以更容易地处理有碰撞的运动，同时不需处理刚体。</p>
 <ul>
@@ -681,14 +694,14 @@ public class ExampleScript : MonoBehaviour
 <p>传入表示各方向移动<strong>速度</strong>的 Vector3 类型参数 <code>speed</code>，使物体移动。</p>
 <p>其中 Y 轴会被忽略，重力自动应用。</p>
 <p>返回角色物体是否在地面上。</p>
-<h2 id="定义-14"><a class="header" href="#定义-14">定义</a></h2>
+<h2 id="定义-16"><a class="header" href="#定义-16">定义</a></h2>
 <pre><code class="language-csharp">public bool SimpleMove(Vector3 speed);
 </code></pre>
 <div class="table-wrapper"><table><thead><tr><th>参数名</th><th>类型</th><th>必要</th><th>说明</th></tr></thead><tbody>
 <tr><td>speed</td><td>Vector3</td><td>是</td><td>各方向移动速度，单位为 <code>units/s</code>，Y 轴会被忽略。</td></tr>
 </tbody></table>
 </div>
-<h2 id="示例-14"><a class="header" href="#示例-14">示例</a></h2>
+<h2 id="示例-16"><a class="header" href="#示例-16">示例</a></h2>
 <p>简单的人物控制器，左右键旋转，前后键移动。</p>
 <pre><code class="language-csharp">using UnityEngine;
 
@@ -720,14 +733,14 @@ public class ExampleScript : MonoBehaviour
 <div style="break-before: page; page-break-before: always;"></div><h1 id="charactercontrollermove"><a class="header" href="#charactercontrollermove">CharacterController.Move</a></h1>
 <p>传入表示各方向移动<strong>增量值</strong>的 Vector3 类型参数 <code>motion</code>，使物体移动。</p>
 <p>与 <a href="CharacterController/./SimpleMove.html">SimpleMove</a> 不同的是，它是增量值而不是速度，且可以控制 Y 轴。</p>
-<h2 id="定义-15"><a class="header" href="#定义-15">定义</a></h2>
+<h2 id="定义-17"><a class="header" href="#定义-17">定义</a></h2>
 <pre><code class="language-csharp">public CollisionFlags Move(Vector3 motion);
 </code></pre>
 <div class="table-wrapper"><table><thead><tr><th>参数名</th><th>类型</th><th>必要</th><th>说明</th></tr></thead><tbody>
 <tr><td>motion</td><td>Vector3</td><td>是</td><td>各方向移动的绝对增量值</td></tr>
 </tbody></table>
 </div>
-<h2 id="示例-15"><a class="header" href="#示例-15">示例</a></h2>
+<h2 id="示例-17"><a class="header" href="#示例-17">示例</a></h2>
 <p>一个简单的第一人称控制器</p>
 <pre><code class="language-csharp">using UnityEngine;
 
@@ -770,10 +783,10 @@ public class ExampleScript : MonoBehaviour
 </code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="charactercontrollerisgrounded"><a class="header" href="#charactercontrollerisgrounded">CharacterController.isGrounded</a></h1>
 <p>判断物体是否在地面上，但只有在移动中才进行检测。（在最后的移动中是否触地）</p>
-<h2 id="定义-16"><a class="header" href="#定义-16">定义</a></h2>
+<h2 id="定义-18"><a class="header" href="#定义-18">定义</a></h2>
 <pre><code class="language-csharp">public bool isGrounded;
 </code></pre>
-<h2 id="示例-16"><a class="header" href="#示例-16">示例</a></h2>
+<h2 id="示例-18"><a class="header" href="#示例-18">示例</a></h2>
 <p>这是对 <a href="CharacterController/./Move.html">CharacterController.Move</a> 中示例的补充，添加了跳跃功能。</p>
 <p>由于使用 <a href="CharacterController/./Move.html">Move</a> 而不是 <a href="CharacterController/./SimpleMove.html">SimpleMove</a>，所以需要自己处理重力。</p>
 <pre><code class="language-csharp">using System;
@@ -854,7 +867,7 @@ public class ExampleScript : MonoBehaviour
 <div style="break-before: page; page-break-before: always;"></div><h1 id="randomrange"><a class="header" href="#randomrange">Random.Range</a></h1>
 <p>返回区间内一个随机数值。</p>
 <p><code>int</code> 类型时区间左闭右开，<code>float</code> 类型时区间左闭右闭。</p>
-<h2 id="定义-17"><a class="header" href="#定义-17">定义</a></h2>
+<h2 id="定义-19"><a class="header" href="#定义-19">定义</a></h2>
 <pre><code class="language-csharp">public static int Range(int minInclusive, int maxInclusive);
 </code></pre>
 <div class="table-wrapper"><table><thead><tr><th>参数名</th><th>类型</th><th>必要</th><th>说明</th></tr></thead><tbody>
@@ -869,7 +882,7 @@ public class ExampleScript : MonoBehaviour
 <tr><td>maxInclusive</td><td>float</td><td>是</td><td>最大值</td></tr>
 </tbody></table>
 </div>
-<h2 id="示例-17"><a class="header" href="#示例-17">示例</a></h2>
+<h2 id="示例-19"><a class="header" href="#示例-19">示例</a></h2>
 <pre><code class="language-csharp">using UnityEngine;
 
 public class ExampleScript : MonoBehaviour
@@ -893,7 +906,7 @@ public class ExampleScript : MonoBehaviour
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="objectinstantiate"><a class="header" href="#objectinstantiate">Object.Instantiate</a></h1>
 <p>克隆 <code>original</code> 对象并返回此克隆。</p>
-<h2 id="定义-18"><a class="header" href="#定义-18">定义</a></h2>
+<h2 id="定义-20"><a class="header" href="#定义-20">定义</a></h2>
 <pre><code class="language-csharp">public static Object Instantiate(
     Object original,
     Transform parent,
@@ -920,7 +933,7 @@ public class ExampleScript : MonoBehaviour
 <tr><td>parent</td><td>Transform</td><td>否</td><td>新对象的父对象</td></tr>
 </tbody></table>
 </div>
-<h2 id="示例-18"><a class="header" href="#示例-18">示例</a></h2>
+<h2 id="示例-20"><a class="header" href="#示例-20">示例</a></h2>
 <pre><code class="language-csharp">using UnityEngine;
 
 public class Example : MonoBehaviour
@@ -943,18 +956,18 @@ public class Example : MonoBehaviour
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="gameobjectfind"><a class="header" href="#gameobjectfind">GameObject.Find</a></h1>
 <p>通过名称查找游戏对象（<code>GameObject</code>）</p>
-<h2 id="定义-19"><a class="header" href="#定义-19">定义</a></h2>
+<h2 id="定义-21"><a class="header" href="#定义-21">定义</a></h2>
 <pre><code class="language-csharp">public static GameObject Find(string name);
 </code></pre>
 <div class="table-wrapper"><table><thead><tr><th>参数名</th><th>类型</th><th>必要</th><th>说明</th></tr></thead><tbody>
 <tr><td>name</td><td>string</td><td>是</td><td>游戏对象的名称</td></tr>
 </tbody></table>
 </div>
-<h2 id="示例-19"><a class="header" href="#示例-19">示例</a></h2>
+<h2 id="示例-21"><a class="header" href="#示例-21">示例</a></h2>
 <pre><code class="language-csharp"></code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="gameobjectgetcomponent"><a class="header" href="#gameobjectgetcomponent">GameObject.GetComponent</a></h1>
 <p>返回游戏对象（<code>GameObject</code>）的第一个指定类型组件，如果没有则返回 <code>null</code>。</p>
-<h2 id="定义-20"><a class="header" href="#定义-20">定义</a></h2>
+<h2 id="定义-22"><a class="header" href="#定义-22">定义</a></h2>
 <pre><code class="language-csharp">public Component GetComponent(Type type);
 </code></pre>
 <div class="table-wrapper"><table><thead><tr><th>参数名</th><th>类型</th><th>必要</th><th>说明</th></tr></thead><tbody>
@@ -970,7 +983,7 @@ public class Example : MonoBehaviour
 <pre><code class="language-csharp">public T GetComponent&lt;T&gt;();
 </code></pre>
 <p>泛型版本</p>
-<h2 id="示例-20"><a class="header" href="#示例-20">示例</a></h2>
+<h2 id="示例-22"><a class="header" href="#示例-22">示例</a></h2>
 <pre><code class="language-csharp"></code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="gameobjectgetcomponentinchildren"><a class="header" href="#gameobjectgetcomponentinchildren">GameObject.GetComponentInChildren</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="gameobjectaddcomponent"><a class="header" href="#gameobjectaddcomponent">GameObject.AddComponent</a></h1>
@@ -982,14 +995,14 @@ public class Example : MonoBehaviour
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="resourcesload"><a class="header" href="#resourcesload">Resources.Load</a></h1>
 <p>加载指定路径（资源文件夹中）的资产。</p>
-<h2 id="定义-21"><a class="header" href="#定义-21">定义</a></h2>
+<h2 id="定义-23"><a class="header" href="#定义-23">定义</a></h2>
 <pre><code class="language-csharp">public static T Load(string path);
 </code></pre>
 <div class="table-wrapper"><table><thead><tr><th>参数名</th><th>类型</th><th>必要</th><th>说明</th></tr></thead><tbody>
 <tr><td>path</td><td>string</td><td>是</td><td>资产路径</td></tr>
 </tbody></table>
 </div>
-<h2 id="示例-21"><a class="header" href="#示例-21">示例</a></h2>
+<h2 id="示例-23"><a class="header" href="#示例-23">示例</a></h2>
 <pre><code class="language-csharp"></code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="collider"><a class="header" href="#collider">Collider</a></h1>
 <p>碰撞体，用于物体间产生阻碍或检测碰撞。</p>
@@ -1035,37 +1048,37 @@ public class Example : MonoBehaviour
 </ol>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="collideroncollisionenter"><a class="header" href="#collideroncollisionenter">Collider.OnCollisionEnter</a></h1>
 <p>当物体<strong>刚碰撞</strong>另一个物体时被调用。</p>
-<h2 id="定义-22"><a class="header" href="#定义-22">定义</a></h2>
+<h2 id="定义-24"><a class="header" href="#定义-24">定义</a></h2>
 <pre><code class="language-csharp">private void OnCollisionEnter(Collision collision);
 </code></pre>
 <div class="table-wrapper"><table><thead><tr><th>参数名</th><th>类型</th><th>说明</th></tr></thead><tbody>
 <tr><td>collision</td><td>Collision</td><td>与该碰撞事件关联的 <code>Collision</code> 数据，有关 <code>Collision</code> 介绍见 <a href="Collider/./appendix.html#collision">附录 #Collision</a></td></tr>
 </tbody></table>
 </div>
-<h2 id="示例-22"><a class="header" href="#示例-22">示例</a></h2>
+<h2 id="示例-24"><a class="header" href="#示例-24">示例</a></h2>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="oncollisionstay"><a class="header" href="#oncollisionstay">OnCollisionStay</a></h1>
 <p>当物体<strong>持续碰撞</strong>另一个物体时被调用。</p>
-<h2 id="定义-23"><a class="header" href="#定义-23">定义</a></h2>
+<h2 id="定义-25"><a class="header" href="#定义-25">定义</a></h2>
 <pre><code class="language-csharp">private void OnCollisionStay(Collision collision);
 </code></pre>
 <div class="table-wrapper"><table><thead><tr><th>参数名</th><th>类型</th><th>说明</th></tr></thead><tbody>
 <tr><td>collision</td><td>Collision</td><td>与该碰撞事件关联的 <code>Collision</code> 数据，有关 <code>Collision</code> 介绍见 <a href="Collider/./appendix.html#collision">附录 #Collision</a></td></tr>
 </tbody></table>
 </div>
-<h2 id="示例-23"><a class="header" href="#示例-23">示例</a></h2>
+<h2 id="示例-25"><a class="header" href="#示例-25">示例</a></h2>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="collideroncollisionexit"><a class="header" href="#collideroncollisionexit">Collider.OnCollisionExit</a></h1>
 <p>当物体<strong>脱离碰撞</strong>另一个物体时被调用。</p>
-<h2 id="定义-24"><a class="header" href="#定义-24">定义</a></h2>
+<h2 id="定义-26"><a class="header" href="#定义-26">定义</a></h2>
 <pre><code class="language-csharp">private void OnCollisionExit(Collision collision);
 </code></pre>
 <div class="table-wrapper"><table><thead><tr><th>参数名</th><th>类型</th><th>说明</th></tr></thead><tbody>
 <tr><td>collision</td><td>Collision</td><td>与该碰撞事件关联的 <code>Collision</code> 数据，有关 <code>Collision</code> 介绍见 <a href="Collider/./appendix.html#collision">附录 #Collision</a></td></tr>
 </tbody></table>
 </div>
-<h2 id="示例-24"><a class="header" href="#示例-24">示例</a></h2>
+<h2 id="示例-26"><a class="header" href="#示例-26">示例</a></h2>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="ontriggerenter"><a class="header" href="#ontriggerenter">OnTriggerEnter</a></h1>
 <p>当物体<strong>刚碰撞</strong>另一个物体时被调用。</p>
-<h2 id="定义-25"><a class="header" href="#定义-25">定义</a></h2>
+<h2 id="定义-27"><a class="header" href="#定义-27">定义</a></h2>
 <pre><code class="language-csharp">private void OnTriggerEnter(Collider other)
 </code></pre>
 <div class="table-wrapper"><table><thead><tr><th>参数名</th><th>类型</th><th>说明</th></tr></thead><tbody>
@@ -1073,7 +1086,7 @@ public class Example : MonoBehaviour
 </tbody></table>
 </div><div style="break-before: page; page-break-before: always;"></div><h1 id="ontriggerstay"><a class="header" href="#ontriggerstay">OnTriggerStay</a></h1>
 <p>当物体<strong>持续碰撞</strong>另一个物体时被调用。</p>
-<h2 id="定义-26"><a class="header" href="#定义-26">定义</a></h2>
+<h2 id="定义-28"><a class="header" href="#定义-28">定义</a></h2>
 <pre><code class="language-csharp">private void OnTriggerEnter(Collider other)
 </code></pre>
 <div class="table-wrapper"><table><thead><tr><th>参数名</th><th>类型</th><th>说明</th></tr></thead><tbody>
@@ -1081,7 +1094,7 @@ public class Example : MonoBehaviour
 </tbody></table>
 </div><div style="break-before: page; page-break-before: always;"></div><h1 id="ontriggerexit"><a class="header" href="#ontriggerexit">OnTriggerExit</a></h1>
 <p>当物体<strong>脱离碰撞</strong>另一个物体时被调用。</p>
-<h2 id="定义-27"><a class="header" href="#定义-27">定义</a></h2>
+<h2 id="定义-29"><a class="header" href="#定义-29">定义</a></h2>
 <pre><code class="language-csharp">private void OnTriggerEnter(Collider other)
 </code></pre>
 <div class="table-wrapper"><table><thead><tr><th>参数名</th><th>类型</th><th>说明</th></tr></thead><tbody>
@@ -1096,7 +1109,7 @@ public class Example : MonoBehaviour
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="physicschecksphere"><a class="header" href="#physicschecksphere">Physics.CheckSphere</a></h1>
 <p>检测是否有任何碰撞体重叠在定义的球体上。</p>
-<h2 id="定义-28"><a class="header" href="#定义-28">定义</a></h2>
+<h2 id="定义-30"><a class="header" href="#定义-30">定义</a></h2>
 <pre><code class="language-csharp">public static bool CheckSphere(
     Vector3 position,
     float radius,
@@ -1112,7 +1125,7 @@ public class Example : MonoBehaviour
 <tr><td>queryTriggerInteraction</td><td>QueryTriggerInteraction</td><td>否</td><td>指定该查询是否应该命中触发器</td></tr>
 </tbody></table>
 </div>
-<h2 id="示例-25"><a class="header" href="#示例-25">示例</a></h2>
+<h2 id="示例-27"><a class="header" href="#示例-27">示例</a></h2>
 <pre><code class="language-csharp">using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
@@ -1143,14 +1156,14 @@ public class ExampleScript : MonoBehaviour
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="navmeshagentsetdestination"><a class="header" href="#navmeshagentsetdestination">NavMeshAgent.SetDestination</a></h1>
 <p>设置或更新目的地</p>
-<h2 id="定义-29"><a class="header" href="#定义-29">定义</a></h2>
+<h2 id="定义-31"><a class="header" href="#定义-31">定义</a></h2>
 <pre><code class="language-csharp">public bool SetDestination (Vector3 target);
 </code></pre>
 <div class="table-wrapper"><table><thead><tr><th>参数名</th><th>类型</th><th>必要</th><th>说明</th></tr></thead><tbody>
 <tr><td>target</td><td>Vector3</td><td>是</td><td>目的地坐标</td></tr>
 </tbody></table>
 </div>
-<h2 id="示例-26"><a class="header" href="#示例-26">示例</a></h2>
+<h2 id="示例-28"><a class="header" href="#示例-28">示例</a></h2>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="navmeshagentresetpath"><a class="header" href="#navmeshagentresetpath">NavMeshAgent.ResetPath</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="scenemanager"><a class="header" href="#scenemanager">SceneManager</a></h1>
 <p>场景管理</p>
@@ -1159,7 +1172,7 @@ public class ExampleScript : MonoBehaviour
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="scenemanagerloadscene"><a class="header" href="#scenemanagerloadscene">SceneManager.LoadScene</a></h1>
 <p>按照 Build Settings 中的名称或索引加载场景。</p>
-<h2 id="定义-30"><a class="header" href="#定义-30">定义</a></h2>
+<h2 id="定义-32"><a class="header" href="#定义-32">定义</a></h2>
 <pre><code class="language-csharp">public static void LoadScene (int sceneBuildIndex, SceneManagement.LoadSceneMode mode= LoadSceneMode.Single);
 </code></pre>
 <div class="table-wrapper"><table><thead><tr><th>参数名</th><th>类型</th><th>必要</th><th>说明</th></tr></thead><tbody>
@@ -1184,7 +1197,7 @@ public class ExampleScript : MonoBehaviour
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="animatorsetfloat"><a class="header" href="#animatorsetfloat">Animator.SetFloat</a></h1>
 <p>设置浮点参数。</p>
-<h2 id="定义-31"><a class="header" href="#定义-31">定义</a></h2>
+<h2 id="定义-33"><a class="header" href="#定义-33">定义</a></h2>
 <pre><code class="language-csharp">public void SetFloat(string name, float value, float dampTime, float deltaTime);
 </code></pre>
 <div class="table-wrapper"><table><thead><tr><th>参数名</th><th>类型</th><th>必要</th><th>说明</th></tr></thead><tbody>
@@ -1204,7 +1217,7 @@ public class ExampleScript : MonoBehaviour
 </tbody></table>
 </div><div style="break-before: page; page-break-before: always;"></div><h1 id="animatorsetbool"><a class="header" href="#animatorsetbool">Animator.SetBool</a></h1>
 <p>设置布尔参数。</p>
-<h2 id="定义-32"><a class="header" href="#定义-32">定义</a></h2>
+<h2 id="定义-34"><a class="header" href="#定义-34">定义</a></h2>
 <pre><code class="language-csharp">public void SetBool(string name, bool value);
 </code></pre>
 <div class="table-wrapper"><table><thead><tr><th>参数名</th><th>类型</th><th>必要</th><th>说明</th></tr></thead><tbody>
@@ -1220,7 +1233,7 @@ public class ExampleScript : MonoBehaviour
 </tbody></table>
 </div><div style="break-before: page; page-break-before: always;"></div><h1 id="animatorsetinteger"><a class="header" href="#animatorsetinteger">Animator.SetInteger</a></h1>
 <p>设置整型参数。</p>
-<h2 id="定义-33"><a class="header" href="#定义-33">定义</a></h2>
+<h2 id="定义-35"><a class="header" href="#定义-35">定义</a></h2>
 <pre><code class="language-csharp">public void SetInteger(string name, int value);
 </code></pre>
 <div class="table-wrapper"><table><thead><tr><th>参数名</th><th>类型</th><th>必要</th><th>说明</th></tr></thead><tbody>
@@ -1236,7 +1249,7 @@ public class ExampleScript : MonoBehaviour
 </tbody></table>
 </div><div style="break-before: page; page-break-before: always;"></div><h1 id="animatorsettrigger"><a class="header" href="#animatorsettrigger">Animator.SetTrigger</a></h1>
 <p>设置触发器参数。</p>
-<h2 id="定义-34"><a class="header" href="#定义-34">定义</a></h2>
+<h2 id="定义-36"><a class="header" href="#定义-36">定义</a></h2>
 <pre><code class="language-csharp">public void SetTrigger(string name);
 </code></pre>
 <div class="table-wrapper"><table><thead><tr><th>参数名</th><th>类型</th><th>必要</th><th>说明</th></tr></thead><tbody>
@@ -1255,7 +1268,7 @@ public class ExampleScript : MonoBehaviour
 <li><a href="Animation/./Play.html">Play</a> 播放没有混合的动画</li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="animationplay"><a class="header" href="#animationplay">Animation.Play</a></h1>
-<h2 id="定义-35"><a class="header" href="#定义-35">定义</a></h2>
+<h2 id="定义-37"><a class="header" href="#定义-37">定义</a></h2>
 <pre><code class="language-csharp">public bool Play (string animation, PlayMode mode= PlayMode.StopSameLayer);
 </code></pre>
 <div class="table-wrapper"><table><thead><tr><th>参数名</th><th>类型</th><th>必要</th><th>说明</th></tr></thead><tbody>
