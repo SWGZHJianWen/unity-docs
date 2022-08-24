@@ -240,7 +240,25 @@ public class ExampleScript : MonoBehaviour
 <div class="table-wrapper"><table><thead><tr><th>参数名</th><th>类型</th><th>必要</th><th>说明</th></tr></thead><tbody>
 <tr><td>euler</td><td>Vector3</td><td>是</td><td>表示 X、Y、Z 三轴旋转度数的向量</td></tr>
 </tbody></table>
-</div><div style="break-before: page; page-break-before: always;"></div><h1 id="input"><a class="header" href="#input">Input</a></h1>
+</div>
+<h2 id="示例-3"><a class="header" href="#示例-3">示例</a></h2>
+<pre><code class="language-csharp">using UnityEngine;
+
+public class Example : MonoBehaviour
+{
+    private void Start()
+    {
+        var rotationX = 0;
+        var rotationY = 30;
+        var rotationZ = 0;
+        var rotationVector = new Vector3(rotationX, rotationY, rotationZ);
+
+        var rotation = Quaternion.Euler(rotationX, rotationY, rotationZ);
+        var rotation = Quaternion.Euler(rotationVector);
+    }
+}
+</code></pre>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="input"><a class="header" href="#input">Input</a></h1>
 <ul>
 <li>鼠标
 <ul>
@@ -269,7 +287,7 @@ public class ExampleScript : MonoBehaviour
 <tr><td>button</td><td>int</td><td>是</td><td>按键对应数字<br><code>0</code>：鼠标左键<br><code>1</code>：鼠标右键<br><code>2</code>：鼠标中键</td></tr>
 </tbody></table>
 </div>
-<h1 id="示例-3"><a class="header" href="#示例-3">示例</a></h1>
+<h1 id="示例-4"><a class="header" href="#示例-4">示例</a></h1>
 <pre><code class="language-csharp">using UnityEngine;
 
 public class ExampleScript : MonoBehaviour
@@ -296,7 +314,7 @@ public class ExampleScript : MonoBehaviour
 <tr><td>button</td><td>int</td><td>是</td><td>按键对应数字<br><code>0</code>：鼠标左键<br><code>1</code>：鼠标右键<br><code>2</code>：鼠标中键</td></tr>
 </tbody></table>
 </div>
-<h2 id="示例-4"><a class="header" href="#示例-4">示例</a></h2>
+<h2 id="示例-5"><a class="header" href="#示例-5">示例</a></h2>
 <pre><code class="language-csharp">using UnityEngine;
 
 public class ExampleScript : MonoBehaviour
@@ -323,7 +341,7 @@ public class ExampleScript : MonoBehaviour
 <tr><td>button</td><td>int</td><td>是</td><td>按键对应数字<br><code>0</code>：鼠标左键<br><code>1</code>：鼠标右键<br><code>2</code>：鼠标中键</td></tr>
 </tbody></table>
 </div>
-<h2 id="示例-5"><a class="header" href="#示例-5">示例</a></h2>
+<h2 id="示例-6"><a class="header" href="#示例-6">示例</a></h2>
 <pre><code class="language-csharp">using UnityEngine;
 
 public class ExampleScript : MonoBehaviour
@@ -351,7 +369,7 @@ public class ExampleScript : MonoBehaviour
 </tbody></table>
 </div>
 <p><img src="Input/./images/input_manager.png" alt="Input Manager" /></p>
-<h2 id="示例-6"><a class="header" href="#示例-6">示例</a></h2>
+<h2 id="示例-7"><a class="header" href="#示例-7">示例</a></h2>
 <pre><code class="language-csharp">using UnityEngine;
 
 public class ExampleScript : MonoBehaviour
@@ -394,7 +412,7 @@ public class ExampleScript : MonoBehaviour
 </tbody></table>
 </div>
 <p><img src="Input/./images/input_manager.png" alt="Input Manager" /></p>
-<h2 id="示例-7"><a class="header" href="#示例-7">示例</a></h2>
+<h2 id="示例-8"><a class="header" href="#示例-8">示例</a></h2>
 <pre><code class="language-csharp">using UnityEngine;
 
 public class ExampleScript : MonoBehaviour
@@ -437,7 +455,7 @@ public class ExampleScript : MonoBehaviour
 </tbody></table>
 </div>
 <p><img src="Input/./images/input_manager.png" alt="Input Manager" /></p>
-<h2 id="示例-8"><a class="header" href="#示例-8">示例</a></h2>
+<h2 id="示例-9"><a class="header" href="#示例-9">示例</a></h2>
 <pre><code class="language-csharp">using UnityEngine;
 
 public class ExampleScript : MonoBehaviour
@@ -485,7 +503,7 @@ public class ExampleScript : MonoBehaviour
 <tr><td>key</td><td>KeyCode</td><td>是</td><td>按键对应字符串名称，详见 <a href="Input/./appendix.html#%E6%8C%89%E9%94%AE%E4%BB%A3%E7%A0%81%E8%A1%A8">附录 #按键代码表</a></td></tr>
 </tbody></table>
 </div>
-<h2 id="示例-9"><a class="header" href="#示例-9">示例</a></h2>
+<h2 id="示例-10"><a class="header" href="#示例-10">示例</a></h2>
 <pre><code class="language-csharp">using UnityEngine;
 
 public class ExampleScript : MonoBehaviour
@@ -522,7 +540,7 @@ public class ExampleScript : MonoBehaviour
 <tr><td>key</td><td>KeyCode</td><td>是</td><td>按键对应字符串名称，详见 <a href="Input/./appendix.html#%E6%8C%89%E9%94%AE%E4%BB%A3%E7%A0%81%E8%A1%A8">附录 #按键代码表</a></td></tr>
 </tbody></table>
 </div>
-<h2 id="示例-10"><a class="header" href="#示例-10">示例</a></h2>
+<h2 id="示例-11"><a class="header" href="#示例-11">示例</a></h2>
 <pre><code class="language-csharp">using UnityEngine;
 
 public class ExampleScript : MonoBehaviour
@@ -559,7 +577,7 @@ public class ExampleScript : MonoBehaviour
 <tr><td>key</td><td>KeyCode</td><td>是</td><td>按键对应字符串名称，详见 <a href="Input/GetKeyUp.html#%E6%8C%89%E9%94%AE%E4%BB%A3%E7%A0%81%E8%A1%A8">附录 #按键代码表</a></td></tr>
 </tbody></table>
 </div>
-<h2 id="示例-11"><a class="header" href="#示例-11">示例</a></h2>
+<h2 id="示例-12"><a class="header" href="#示例-12">示例</a></h2>
 <pre><code class="language-csharp">using UnityEngine;
 
 public class ExampleScript : MonoBehaviour
@@ -627,7 +645,7 @@ public class ExampleScript : MonoBehaviour
 <h2 id="定义-13"><a class="header" href="#定义-13">定义</a></h2>
 <pre><code class="language-csharp">public static float deltaTime;
 </code></pre>
-<h2 id="示例-12"><a class="header" href="#示例-12">示例</a></h2>
+<h2 id="示例-13"><a class="header" href="#示例-13">示例</a></h2>
 <pre><code class="language-csharp">using UnityEngine;
 
 public class ExampleScript : MonoBehaviour
@@ -670,7 +688,7 @@ public class ExampleScript : MonoBehaviour
 <tr><td>speed</td><td>Vector3</td><td>是</td><td>各方向移动速度，单位为 <code>units/s</code>，Y 轴会被忽略。</td></tr>
 </tbody></table>
 </div>
-<h2 id="示例-13"><a class="header" href="#示例-13">示例</a></h2>
+<h2 id="示例-14"><a class="header" href="#示例-14">示例</a></h2>
 <p>简单的人物控制器，左右键旋转，前后键移动。</p>
 <pre><code class="language-csharp">using UnityEngine;
 
@@ -709,7 +727,7 @@ public class ExampleScript : MonoBehaviour
 <tr><td>motion</td><td>Vector3</td><td>是</td><td>各方向移动的绝对增量值</td></tr>
 </tbody></table>
 </div>
-<h2 id="示例-14"><a class="header" href="#示例-14">示例</a></h2>
+<h2 id="示例-15"><a class="header" href="#示例-15">示例</a></h2>
 <p>一个简单的第一人称控制器</p>
 <pre><code class="language-csharp">using UnityEngine;
 
@@ -755,7 +773,7 @@ public class ExampleScript : MonoBehaviour
 <h2 id="定义-16"><a class="header" href="#定义-16">定义</a></h2>
 <pre><code class="language-csharp">public bool isGrounded;
 </code></pre>
-<h2 id="示例-15"><a class="header" href="#示例-15">示例</a></h2>
+<h2 id="示例-16"><a class="header" href="#示例-16">示例</a></h2>
 <p>这是对 <a href="CharacterController/./Move.html">CharacterController.Move</a> 中示例的补充，添加了跳跃功能。</p>
 <p>由于使用 <a href="CharacterController/./Move.html">Move</a> 而不是 <a href="CharacterController/./SimpleMove.html">SimpleMove</a>，所以需要自己处理重力。</p>
 <pre><code class="language-csharp">using System;
@@ -851,7 +869,7 @@ public class ExampleScript : MonoBehaviour
 <tr><td>maxInclusive</td><td>float</td><td>是</td><td>最大值</td></tr>
 </tbody></table>
 </div>
-<h2 id="示例-16"><a class="header" href="#示例-16">示例</a></h2>
+<h2 id="示例-17"><a class="header" href="#示例-17">示例</a></h2>
 <pre><code class="language-csharp">using UnityEngine;
 
 public class ExampleScript : MonoBehaviour
@@ -902,7 +920,7 @@ public class ExampleScript : MonoBehaviour
 <tr><td>parent</td><td>Transform</td><td>否</td><td>新对象的父对象</td></tr>
 </tbody></table>
 </div>
-<h2 id="示例-17"><a class="header" href="#示例-17">示例</a></h2>
+<h2 id="示例-18"><a class="header" href="#示例-18">示例</a></h2>
 <pre><code class="language-csharp">using UnityEngine;
 
 public class Example : MonoBehaviour
@@ -932,7 +950,7 @@ public class Example : MonoBehaviour
 <tr><td>name</td><td>string</td><td>是</td><td>游戏对象的名称</td></tr>
 </tbody></table>
 </div>
-<h2 id="示例-18"><a class="header" href="#示例-18">示例</a></h2>
+<h2 id="示例-19"><a class="header" href="#示例-19">示例</a></h2>
 <pre><code class="language-csharp"></code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="gameobjectgetcomponent"><a class="header" href="#gameobjectgetcomponent">GameObject.GetComponent</a></h1>
 <p>返回游戏对象（<code>GameObject</code>）的第一个指定类型组件，如果没有则返回 <code>null</code>。</p>
@@ -952,7 +970,7 @@ public class Example : MonoBehaviour
 <pre><code class="language-csharp">public T GetComponent&lt;T&gt;();
 </code></pre>
 <p>泛型版本</p>
-<h2 id="示例-19"><a class="header" href="#示例-19">示例</a></h2>
+<h2 id="示例-20"><a class="header" href="#示例-20">示例</a></h2>
 <pre><code class="language-csharp"></code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="gameobjectgetcomponentinchildren"><a class="header" href="#gameobjectgetcomponentinchildren">GameObject.GetComponentInChildren</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="gameobjectaddcomponent"><a class="header" href="#gameobjectaddcomponent">GameObject.AddComponent</a></h1>
@@ -971,7 +989,7 @@ public class Example : MonoBehaviour
 <tr><td>path</td><td>string</td><td>是</td><td>资产路径</td></tr>
 </tbody></table>
 </div>
-<h2 id="示例-20"><a class="header" href="#示例-20">示例</a></h2>
+<h2 id="示例-21"><a class="header" href="#示例-21">示例</a></h2>
 <pre><code class="language-csharp"></code></pre>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="collider"><a class="header" href="#collider">Collider</a></h1>
 <p>碰撞体，用于物体间产生阻碍或检测碰撞。</p>
@@ -1024,7 +1042,7 @@ public class Example : MonoBehaviour
 <tr><td>collision</td><td>Collision</td><td>与该碰撞事件关联的 <code>Collision</code> 数据，有关 <code>Collision</code> 介绍见 <a href="Collider/./appendix.html#collision">附录 #Collision</a></td></tr>
 </tbody></table>
 </div>
-<h2 id="示例-21"><a class="header" href="#示例-21">示例</a></h2>
+<h2 id="示例-22"><a class="header" href="#示例-22">示例</a></h2>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="oncollisionstay"><a class="header" href="#oncollisionstay">OnCollisionStay</a></h1>
 <p>当物体<strong>持续碰撞</strong>另一个物体时被调用。</p>
 <h2 id="定义-23"><a class="header" href="#定义-23">定义</a></h2>
@@ -1034,7 +1052,7 @@ public class Example : MonoBehaviour
 <tr><td>collision</td><td>Collision</td><td>与该碰撞事件关联的 <code>Collision</code> 数据，有关 <code>Collision</code> 介绍见 <a href="Collider/./appendix.html#collision">附录 #Collision</a></td></tr>
 </tbody></table>
 </div>
-<h2 id="示例-22"><a class="header" href="#示例-22">示例</a></h2>
+<h2 id="示例-23"><a class="header" href="#示例-23">示例</a></h2>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="collideroncollisionexit"><a class="header" href="#collideroncollisionexit">Collider.OnCollisionExit</a></h1>
 <p>当物体<strong>脱离碰撞</strong>另一个物体时被调用。</p>
 <h2 id="定义-24"><a class="header" href="#定义-24">定义</a></h2>
@@ -1044,7 +1062,7 @@ public class Example : MonoBehaviour
 <tr><td>collision</td><td>Collision</td><td>与该碰撞事件关联的 <code>Collision</code> 数据，有关 <code>Collision</code> 介绍见 <a href="Collider/./appendix.html#collision">附录 #Collision</a></td></tr>
 </tbody></table>
 </div>
-<h2 id="示例-23"><a class="header" href="#示例-23">示例</a></h2>
+<h2 id="示例-24"><a class="header" href="#示例-24">示例</a></h2>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="ontriggerenter"><a class="header" href="#ontriggerenter">OnTriggerEnter</a></h1>
 <p>当物体<strong>刚碰撞</strong>另一个物体时被调用。</p>
 <h2 id="定义-25"><a class="header" href="#定义-25">定义</a></h2>
@@ -1094,7 +1112,7 @@ public class Example : MonoBehaviour
 <tr><td>queryTriggerInteraction</td><td>QueryTriggerInteraction</td><td>否</td><td>指定该查询是否应该命中触发器</td></tr>
 </tbody></table>
 </div>
-<h2 id="示例-24"><a class="header" href="#示例-24">示例</a></h2>
+<h2 id="示例-25"><a class="header" href="#示例-25">示例</a></h2>
 <pre><code class="language-csharp">using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
@@ -1132,7 +1150,7 @@ public class ExampleScript : MonoBehaviour
 <tr><td>target</td><td>Vector3</td><td>是</td><td>目的地坐标</td></tr>
 </tbody></table>
 </div>
-<h2 id="示例-25"><a class="header" href="#示例-25">示例</a></h2>
+<h2 id="示例-26"><a class="header" href="#示例-26">示例</a></h2>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="navmeshagentresetpath"><a class="header" href="#navmeshagentresetpath">NavMeshAgent.ResetPath</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="scenemanager"><a class="header" href="#scenemanager">SceneManager</a></h1>
 <p>场景管理</p>
