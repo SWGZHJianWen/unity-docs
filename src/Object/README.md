@@ -2,4 +2,8 @@
 
 Unity 中所有可引用对象的基类
 
-* [Instantiate](./Instantiate.md) 实例化，克隆游戏对象。
+| 方法                            | 说明         |
+| ------------------------------- | ------------ |
+| [Instantiate](./Instantiate.md) | 克隆游戏对象 |
+
+

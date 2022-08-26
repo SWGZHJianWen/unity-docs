@@ -25,7 +25,9 @@ public Component GetComponent(string type);
 public T GetComponent<T>();
 ```
 
-泛型版本
+| 参数名 | 类型 | 必要 | 说明             |
+| ------ | ---- | ---- | ---------------- |
+| T      | 泛型 | 是   | 要检索的组件类型 |
 
 ## 示例
 
