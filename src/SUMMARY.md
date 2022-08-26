@@ -27,8 +27,9 @@
 # 时间
 - [Time](Time/README.md)
     - [deltaTime](Time/deltaTime.md)
-    - [time](Time/time.md)
     - [timeScale](Time/timeScale.md)
+    - [time](Time/time.md)
+
 
 # 玩家控制
 - [CharacterController](CharacterController/README.md)
