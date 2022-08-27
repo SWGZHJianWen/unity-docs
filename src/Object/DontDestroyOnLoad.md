@@ -1,5 +1,7 @@
 # Object.DontDestroyOnLoad
 
+加载新场景时不破坏目标对象
+
 ## 定义
 
 ```csharp
