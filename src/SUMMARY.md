@@ -55,6 +55,7 @@
 # 物体
 - [Object](Object/README.md)
     - [Instantiate](Object/Instantiate.md)
+    - [DontDestroyOnLoad](Object/DontDestroyOnLoad.md)
 - [GameObject](GameObject/README.md)
     - [Find](GameObject/Find.md)
     - [GetComponent](GameObject/GetComponent.md)
@@ -87,7 +88,6 @@
 # 场景
 - [SceneManager](SceneManager/README.md)
     - [LoadScene](SceneManager/LoadScene.md)
-    - [DontDestoryOnLoad](SceneManager/DontDestoryOnLoad.md)
 
 # 动画
 - [Animator](Animator/README.md)
