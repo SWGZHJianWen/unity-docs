@@ -99,6 +99,7 @@
 - [Animation](Animation/README.md)
     - [Play](Animation/Play.md)
     - [Stop](Animation/Stop.md)
+- [AnimatorStateInfo](AnimatorStateInfo/README.md)
 
 # 音频
 - [AudioSource](AudioSource/README.md)
