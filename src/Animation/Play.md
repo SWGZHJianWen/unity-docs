@@ -1,5 +1,7 @@
 # Animation.Play
 
+播放未混合的动画
+
 ## 定义
 
 ```csharp
