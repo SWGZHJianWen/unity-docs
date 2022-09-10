@@ -12,3 +12,26 @@ private void OnTriggerEnter(Collider other)
 | ------ | -------- | -------------------------------------- |
 | other  | Collider | 该碰撞中涉及的其他碰撞体（`Collider`） |
 
+## 示例
+
+```csharp
+using UnityEngine;
+
+public class ExampleScript : MonoBehaviour
+{
+    public float health = 10f;
+
+    private void OnTriggerEnter(Collider other)
+    {
+        switch (other.tag)
+        {
+            case "Red":
+                health -= 2f;
+                break;
+            case "Green":
+                health += 1f;
+                break;
+        }
+    }
+}
+```
