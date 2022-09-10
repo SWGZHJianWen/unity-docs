@@ -19,7 +19,6 @@ private void OnTriggerEnter(Collider other)
 碰到红色（`Red` 标签）扣血，碰到绿色（`Green` 标签）回复，在紫色（`Purple` 标签）里中毒，在黄色（`Yellow` 标签）里减速。
 
 ```csharp
-using System;
 using UnityEngine;
 
 public class ExampleScript : MonoBehaviour
