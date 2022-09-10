@@ -15,12 +15,14 @@ private void OnTriggerEnter(Collider other)
 ## 示例
 
 ```csharp
+using System;
 using UnityEngine;
 
 public class ExampleScript : MonoBehaviour
 {
     public float health = 10f;
-
+    public float speed = 2f;
+    private float _totalTime;
     private void OnTriggerEnter(Collider other)
     {
         switch (other.tag)
@@ -33,5 +35,30 @@ public class ExampleScript : MonoBehaviour
                 break;
         }
     }
-}
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("Purple"))
+        {
+            _totalTime += Time.deltaTime;
+            if (_totalTime >= 1f)
+            {
+                health -= 0.5f;
+                _totalTime = 0f;
+            }
+        }
+        else if (other.CompareTag("Yellow"))
+        {
+            speed = 1f;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Yellow"))
+        {
+            speed = 2f;
+        }
+    }
+} 
 ```
