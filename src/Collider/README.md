@@ -24,8 +24,14 @@
 
 ## 补充
 
-### 使用前提
+OnCollisionxxx 使用注意：
+
+* 碰撞双方都有碰撞体或者刚体
+* 如果双方都有刚体，需要勾选 `isKinematic`
+* 双方都不可勾选 `isTrigger`
+
+OnTriggerxxx 使用前提：
 
 * 碰撞双方都有碰撞体
-* 其中一方有刚体
-* 如果是触发型检测需要将 `isTrigger` 属性设为 `true`（两个物体都启用了 `isTrigger` 则不会发生碰撞）
+* 至少有一方有刚体
+* 双方至少有一方勾选 `isTrigger`
