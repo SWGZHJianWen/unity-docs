@@ -34,4 +34,4 @@ OnTriggerxxx 使用前提：
 
 * 碰撞双方都有碰撞体
 * 至少有一方有刚体
-* 双方至少有一方勾选 `isTrigger`
+* 至少有一方勾选 `isTrigger`
