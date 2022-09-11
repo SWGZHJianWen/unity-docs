@@ -6,8 +6,8 @@ src = "src"
 
 [output.html]
 additional-css = [
-    '.\theme\catppuccin.css',
-    '.\theme\catppuccin-highlight.css',
+    'theme/catppuccin.css',
+    'theme/catppuccin-highlight.css',
 ]
 
 [preprocessor]
