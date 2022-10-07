@@ -13,3 +13,36 @@ public bool SetDestination (Vector3 target);
 | target | Vector3 | 是   | 目的地坐标 |
 
 ## 示例
+
+```csharp
+using UnityEngine;
+using UnityEngine.AI;
+
+public class ExampleScript : MonoBehaviour
+{
+    public NavMeshAgent myNavMeshAgent;
+    public Camera myCamera;
+    
+    private void Start()
+    {
+        myNavMeshAgent = GetComponent<NavMeshAgent>();
+    }
+
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            SetDestinationToMousePosition();
+        }
+    }
+
+    private void SetDestinationToMousePosition()
+    {
+        var ray = myCamera.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out var hit))
+        {
+            myNavMeshAgent.SetDestination(hit.point);
+        }
+    }
+}
+```
