@@ -10,21 +10,23 @@
 public static int Range(int minInclusive, int maxInclusive);
 ```
 
-| 参数名       | 类型 | 必要 | 说明   |
-| ------------ | ---- | ---- | ------ |
-| minInclusive | int  | 是   | 最小值 |
-| maxInclusive | int  | 是   | 最大值 |
+| 参数名          | 类型  | 必要  | 说明  |
+| ------------ | --- | --- | --- |
+| minInclusive | int | 是   | 最小值 |
+| maxInclusive | int | 是   | 最大值 |
 
 ```csharp
 public static float Range(float minInclusive, float maxInclusive);
 ```
 
-| 参数名       | 类型  | 必要 | 说明   |
-| ------------ | ----- | ---- | ------ |
+| 参数名          | 类型    | 必要  | 说明  |
+| ------------ | ----- | --- | --- |
 | minInclusive | float | 是   | 最小值 |
 | maxInclusive | float | 是   | 最大值 |
 
 ## 示例
+
+点击按钮后，随机在 `([-10 ~ 10], 0, [-10 ~ 10])` 的位置生成物体
 
 ```csharp
 using UnityEngine;
@@ -32,7 +34,7 @@ using UnityEngine;
 public class ExampleScript : MonoBehaviour
 {
     public GameObject prefab;
- 
+
     void OnGUI()
     {
         if (GUI.Button(new Rect(10, 10, 100, 50), "Instantiate!"))
