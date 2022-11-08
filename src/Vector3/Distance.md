@@ -8,20 +8,19 @@
 public static float Distance(Vector3 a, Vector3 b);
 ```
 
-| 参数名 | 类型    | 必要 | 说明 |
-| ------ | ------- | ---- | ---- |
-| a      | Vector3 | 是   | a 点 |
-| b      | Vector3 | 是   | b 点 |
+| 参数名 | 类型      | 必要  | 说明  |
+| --- | ------- | --- | --- |
+| a   | Vector3 | 是   | a 点 |
+| b   | Vector3 | 是   | b 点 |
 
-## 示例
-
-```csharp
+```admonish example
+~~~csharp
 using UnityEngine;
 
 public class ExampleScript : MonoBehaviour
 {
     public Transform target;
-    
+
     private bool IsClose()
     {
         if (!target) return false;
@@ -29,5 +28,5 @@ public class ExampleScript : MonoBehaviour
         return distance < 10.0f;
     }
 }
+~~~
 ```
-
