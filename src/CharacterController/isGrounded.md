@@ -25,7 +25,7 @@ public class ExampleScript : MonoBehaviour
     public float gravity = 9.8f; // 重力大小
     public float jumpHeight = 2f; // 跳跃高度
     public float sensitivity = 2f; // 鼠标灵敏度
-    
+
     private CharacterController _controller;
     private float _ySpeed; // Y 轴速度
 
@@ -41,7 +41,7 @@ public class ExampleScript : MonoBehaviour
             transform.right * Input.GetAxis("Horizontal") +
             transform.forward * Input.GetAxis("Vertical");
         motion *= moveSpeed;
-        
+
         // 跳跃
         switch (_controller.isGrounded)
         {
@@ -56,10 +56,10 @@ public class ExampleScript : MonoBehaviour
                 break;
         }
         motion += transform.up * _ySpeed;
-        
+
         _controller.Move(motion * Time.deltaTime);
     }
-    
+
     private void Start()
     {
         _controller = GetComponent<CharacterController>();
@@ -75,7 +75,7 @@ public class ExampleScript : MonoBehaviour
 
 ## 补充
 
-上述示例也许并不好用，因为 `isGround` 只有角色移动时（调用 `SimpleMove` 或 `Move`时）才会进行检测，并且 `CharacterController` 的 `Skin Width` 也会对其影响。
+上述示例也许并不好用，因为 `isGrounded` 只有角色移动时（调用 `SimpleMove` 或 `Move`时）才会进行检测，并且 `CharacterController` 的 `Skin Width` 也会对其影响。
 
 建议自己实现地面检测功能，方法有多种，这里使用最简单的 `Raycast`，关于 `Raycast` 的用法在 [Physics/Raycast](../Physics/Raycast.md) 中有介绍。
 
@@ -118,7 +118,7 @@ public class ExampleScript : MonoBehaviour
             transform.right * Input.GetAxis("Horizontal") +
             transform.forward * Input.GetAxis("Vertical");
         motion *= moveSpeed;
-        
+
         // 跳跃
         switch (IsGrounded())
         {
@@ -133,7 +133,7 @@ public class ExampleScript : MonoBehaviour
                 break;
         }
         motion += transform.up * _ySpeed;
-        
+
         _controller.Move(motion * Time.deltaTime);
     }
 
@@ -144,7 +144,7 @@ public class ExampleScript : MonoBehaviour
         return Physics.Raycast(origin, -playTransform.up, 0.01f, groundLayer); // 发射长度为 0.01 的射线，判断是否与地面相交
 }
     }
-    
+
     private void Start()
     {
         _controller = GetComponent<CharacterController>();
