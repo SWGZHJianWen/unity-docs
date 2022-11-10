@@ -10,8 +10,8 @@
 public CollisionFlags Move(Vector3 motion);
 ```
 
-| 参数名 | 类型    | 必要 | 说明                   |
-| ------ | ------- | ---- | ---------------------- |
+| 参数名    | 类型      | 必要  | 说明          |
+|:------ |:------- |:--- |:----------- |
 | motion | Vector3 | 是   | 各方向移动的绝对增量值 |
 
 ## 示例
@@ -26,7 +26,7 @@ public class ExampleScript : MonoBehaviour
 {
     public float moveSpeed = 2.0f; // 移动速度
     public float sensitivity = 2f; // 鼠标灵敏度
-    
+
     private CharacterController _controller;
     private float _ySpeed;
 
@@ -45,7 +45,7 @@ public class ExampleScript : MonoBehaviour
 
         _controller.Move(motion * Time.deltaTime);
     }
-    
+
     private void Start()
     {
         _controller = GetComponent<CharacterController>();

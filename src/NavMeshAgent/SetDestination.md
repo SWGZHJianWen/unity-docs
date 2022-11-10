@@ -8,8 +8,8 @@
 public bool SetDestination (Vector3 target);
 ```
 
-| 参数名 | 类型    | 必要 | 说明       |
-| ------ | ------- | ---- | ---------- |
+| 参数名    | 类型      | 必要  | 说明    |
+|:------ |:------- |:--- |:----- |
 | target | Vector3 | 是   | 目的地坐标 |
 
 ## 示例
@@ -22,7 +22,7 @@ public class ExampleScript : MonoBehaviour
 {
     public NavMeshAgent myNavMeshAgent;
     public Camera myCamera;
-    
+
     private void Start()
     {
         myNavMeshAgent = GetComponent<NavMeshAgent>();

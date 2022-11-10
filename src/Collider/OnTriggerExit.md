@@ -8,9 +8,9 @@
 private void OnTriggerEnter(Collider other)
 ```
 
-| 参数名 | 类型     | 说明                                   |
-| ------ | -------- | -------------------------------------- |
-| other  | Collider | 该碰撞中涉及的其他碰撞体（`Collider`） |
+| 参数名   | 类型       | 说明                       |
+|:----- |:-------- |:------------------------ |
+| other | Collider | 该碰撞中涉及的其他碰撞体（`Collider`） |
 
 ## 示例
 
@@ -26,7 +26,7 @@ public class ExampleScript : MonoBehaviour
     public float health = 10f;
     public float speed = 2f;
     private float _totalTime;
-    
+
     private void OnTriggerEnter(Collider other)
     {
         switch (other.tag)

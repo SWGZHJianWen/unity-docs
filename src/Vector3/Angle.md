@@ -9,10 +9,9 @@ public static float Angle(Vector3 from, Vector3 to);
 ```
 
 | 参数名  | 类型      | 必要  | 说明   |
-| ---- | ------- | --- | ---- |
+|:---- |:------- |:--- |:---- |
 | from | Vector3 | 是   | 源向量  |
 | to   | Vector3 | 是   | 目标向量 |
-
 
 ```admonish example
 ~~~csharp

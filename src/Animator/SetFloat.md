@@ -9,7 +9,7 @@ public void SetFloat(string name, float value, float dampTime, float deltaTime);
 ```
 
 | 参数名    | 类型   | 必要             | 说明                 |
-| --------- | ------ | ---------------- | -------------------- |
+|:--------- |:------ |:---------------- |:-------------------- |
 | name      | string | 是               | 参数名称             |
 | value     | float  | 是               | 新的参数值           |
 | dampTime  | float  | 否               | 阻尼器总时间         |
@@ -21,7 +21,7 @@ public void SetFloat(int id, float value, float dampTime, float deltaTime);
 ```
 
 | 参数名    | 类型   | 必要             | 说明                 |
-| --------- | ------ | ---------------- | -------------------- |
+|:--------- |:------ |:---------------- |:-------------------- |
 | id        | int    | 是               | 参数 ID              |
 | value     | float  | 是               | 新的参数值           |
 | dampTime  | float  | 否               | 阻尼器总时间         |

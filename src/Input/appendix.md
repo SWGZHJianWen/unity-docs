@@ -11,11 +11,11 @@
 * 小键盘键：`"[1]"`、`"[2]"`、`"[3]"`、`"[+]"`、`"[equals]"`……
 
 * 修改键：
-
+  
   `"right shift"`、`"left shift"`、`"right ctrl"`、`"left ctrl"`、`"right alt"`、`"left alt"`、`"right cmd"`、`"left cmd"`
 
 * 特殊键：
-
+  
   `"backspace"`、`"tab"`、`"return"`、`"escape"`、`"space"`、`"delete"`、`"enter"`、`"insert"`、`"home"`、`"end"`、`"page up"`、`"page down"`
 
 * 功能键：`"f1"`、`"f2"`、`"f3"`……

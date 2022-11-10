@@ -11,7 +11,7 @@ public AnimatorStateInfo GetCurrentAnimatorStateInfo (int layerIndex);
 ```
 
 | 参数名        | 类型  | 必要  | 说明  |
-| ---------- | --- | --- | --- |
+|:---------- |:--- |:--- |:--- |
 | layerIndex | int | 时   | 层索引 |
 
 ## 示例

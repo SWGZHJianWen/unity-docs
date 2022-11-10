@@ -8,17 +8,17 @@
 public static bool GetKey(string name);
 ```
 
-| 参数名 | 类型   | 必要 | 说明                                                         |
-| ------ | ------ | ---- | ------------------------------------------------------------ |
-| name   | string | 是   | 按键对应代码，详见 [附录 #按键名称表](./appendix.md#按键名称表) |
+| 参数名  | 类型     | 必要  | 说明                                         |
+|:---- |:------ |:--- |:------------------------------------------ |
+| name | string | 是   | 按键对应代码，详见 [附录 #按键名称表](./appendix.md#按键名称表) |
 
 ```csharp
 public static bool GetKey(KeyCode key);
 ```
 
-| 参数名 | 类型    | 必要 | 说明                                                         |
-| ------ | ------- | ---- | ------------------------------------------------------------ |
-| key    | KeyCode | 是   | 按键对应字符串名称，详见 [附录 #按键代码表](./appendix.md#按键代码表) |
+| 参数名 | 类型      | 必要  | 说明                                            |
+|:--- |:------- |:--- |:--------------------------------------------- |
+| key | KeyCode | 是   | 按键对应字符串名称，详见 [附录 #按键代码表](./appendix.md#按键代码表) |
 
 ## 示例
 
@@ -28,7 +28,7 @@ using UnityEngine;
 public class ExampleScript : MonoBehaviour
 {
     public float number = 0.0f;
-    
+
     private void Update()
     {
         if (Input.GetKeyDown("up"))

@@ -12,9 +12,9 @@
 public bool SimpleMove(Vector3 speed);
 ```
 
-| 参数名 | 类型    | 必要 | 说明                                             |
-| ------ | ------- | ---- | ------------------------------------------------ |
-| speed  | Vector3 | 是   | 各方向移动速度，单位为 `units/s`，Y 轴会被忽略。 |
+| 参数名   | 类型      | 必要  | 说明                             |
+|:----- |:------- |:--- |:------------------------------ |
+| speed | Vector3 | 是   | 各方向移动速度，单位为 `units/s`，Y 轴会被忽略。 |
 
 ## 示例
 
@@ -28,9 +28,9 @@ public class ExampleScript : MonoBehaviour
 {
     public float moveSpeed = 2.0f; // 移动速度
     public float rotateSpeed = 2.0f; // 旋转速度
-    
+
     private CharacterController _controller;
-    
+
     private void Start()
     {
         _controller = GetComponent<CharacterController>();
@@ -40,7 +40,7 @@ public class ExampleScript : MonoBehaviour
     {
         // 旋转
         transform.Rotate(0, Input.GetAxis("Horizontal") * rotateSpeed, 0);
-        
+
         // 前进后退
         var forward = transform.TransformDirection(Vector3.forward);
         var curSpeed = moveSpeed * Input.GetAxis("Vertical");

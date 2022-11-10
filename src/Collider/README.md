@@ -6,18 +6,18 @@
 
 碰撞时两物体产生阻碍
 
-| 方法                                      | 说明                   |
-| ----------------------------------------- | ---------------------- |
-| [OnCollisionEnter](./OnCollisionEnter.md) | 碰撞时被调用           |
-| [OnCollisionExit](./OnCollisionExit.md)   | 碰撞体离开时被调用     |
+| 方法                                        | 说明          |
+|:----------------------------------------- |:----------- |
+| [OnCollisionEnter](./OnCollisionEnter.md) | 碰撞时被调用      |
+| [OnCollisionExit](./OnCollisionExit.md)   | 碰撞体离开时被调用   |
 | [OnCollisionStay](./OnCollisionStay.md)   | 碰撞体持续碰撞时被调用 |
 
 ## 触发型检测
 
 碰撞时两物体不产生阻碍
 
-| 方法                                  | 说明               |
-| ------------------------------------- | ------------------ |
+| 方法                                    | 说明        |
+|:------------------------------------- |:--------- |
 | [OnTriggerEnter](./OnTriggerEnter.md) | 触发器进入时被调用 |
 | [OnTriggerExit](./OnTriggerExit.md)   | 触发器退出时被调用 |
 | [OnTriggerStay](./OnTriggerStay.md)   | 在触发器内时被调用 |

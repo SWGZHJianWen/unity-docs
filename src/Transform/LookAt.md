@@ -8,20 +8,19 @@
 public void LookAt(Transform target, Vector3 worldUp = Vector3.up);
 ```
 
-
-| 参数名  | 类型      | 必要 | 说明                              |
-| --------- | ----------- | ------ | ----------------------------------- |
-| target  | Transform | 是   | 指向的对象                        |
+| 参数名     | 类型        | 必要  | 说明                 |
+|:------- |:--------- |:--- |:------------------ |
+| target  | Transform | 是   | 指向的对象              |
 | worldUp | Vector3   | 否   | 指定向上方向的向量，默认世界 Y 轴 |
 
 ```csharp
 public void LookAt (Vector3 worldPosition, Vector3 worldUp = Vector3.up);
 ```
 
-| 参数名  | 类型      | 必要 | 说明                              |
-| --------- | ----------- | ------ | ----------------------------------- |
-| worldPosition  | Transform | 是   | 要对准的点                       |
-| worldUp | Vector3   | 否   | 指定向上方向的向量，默认世界 Y 轴 |
+| 参数名           | 类型        | 必要  | 说明                 |
+|:------------- |:--------- |:--- |:------------------ |
+| worldPosition | Transform | 是   | 要对准的点              |
+| worldUp       | Vector3   | 否   | 指定向上方向的向量，默认世界 Y 轴 |
 
 ## 示例
 

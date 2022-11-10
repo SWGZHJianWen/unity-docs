@@ -8,22 +8,21 @@
 public void Translate(Vector3 translation, Space relativeTo = Space.Self);
 ```
 
-| 参数名      | 类型    | 必要 | 说明                                                         |
-| ----------- | ------- | ---- | ------------------------------------------------------------ |
-| translation | Vector3 | 是   | 移动方向和大小                                               |
+| 参数名         | 类型      | 必要  | 说明                                                                      |
+|:----------- |:------- |:--- |:----------------------------------------------------------------------- |
+| translation | Vector3 | 是   | 移动方向和大小                                                                 |
 | relativeTo  | Space   | 否   | 相对的坐标系，默认 `Space.Self`<br />`Space.Self`：局部坐标系<br />`Space.World`：世界坐标系 |
 
 ```csharp
 public void Translate(float x, float y, float z, Space relativeTo = Space.Self);
 ```
 
-| 参数名     | 类型  | 必要 | 说明                                                         |
-| ---------- | ----- | ---- | ------------------------------------------------------------ |
-| x          | float | 是   | X 轴移动大小                                                 |
-| y          | float | 是   | Y 轴移动大小                                                 |
-| z          | float | 是   | Z 轴移动大小                                                 |
+| 参数名        | 类型    | 必要  | 说明                                                                      |
+|:---------- |:----- |:--- |:----------------------------------------------------------------------- |
+| x          | float | 是   | X 轴移动大小                                                                 |
+| y          | float | 是   | Y 轴移动大小                                                                 |
+| z          | float | 是   | Z 轴移动大小                                                                 |
 | relativeTo | Space | 否   | 相对的坐标系，默认 `Space.Self`<br />`Space.Self`：局部坐标系<br />`Space.World`：世界坐标系 |
-
 
 ## 示例
 
