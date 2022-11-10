@@ -13,8 +13,8 @@ public static float Distance(Vector3 a, Vector3 b);
 | a   | Vector3 | 是   | a 点 |
 | b   | Vector3 | 是   | b 点 |
 
-```admonish example
-~~~csharp
+~~~admonish example
+```csharp
 using UnityEngine;
 
 public class ExampleScript : MonoBehaviour
@@ -28,5 +28,6 @@ public class ExampleScript : MonoBehaviour
         return distance < 10.0f;
     }
 }
-~~~
 ```
+~~~
+

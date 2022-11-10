@@ -13,8 +13,8 @@ public static float Angle(Vector3 from, Vector3 to);
 | from | Vector3 | 是   | 源向量  |
 | to   | Vector3 | 是   | 目标向量 |
 
-```admonish example
-~~~csharp
+~~~admonish example
+```csharp
 using UnityEngine;
 
 public class ExampleScript : MonoBehaviour
@@ -29,5 +29,5 @@ public class ExampleScript : MonoBehaviour
         return angle < 5.0f;
     }
 }
-~~~
 ```
+~~~
