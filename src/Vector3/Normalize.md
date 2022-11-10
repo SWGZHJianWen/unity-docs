@@ -12,9 +12,8 @@ public static Vector3 Normalize(Vector3 value);
 | ------ | ------- | ---- | ------------ |
 | value  | Vector3 | 是   | 待归一化向量 |
 
-## 示例
-
-```csharp
+```admonish example
+~~~csharp
 using UnityEngine;
 
 public class ExampleScript : MonoBehaviour
@@ -28,5 +27,6 @@ public class ExampleScript : MonoBehaviour
         transform.Translate(direction * Time.deltaTime);
     }
 }
+~~~
 ```
 
