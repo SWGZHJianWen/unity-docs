@@ -24,9 +24,7 @@ public void Translate(float x, float y, float z, Space relativeTo = Space.Self);
 | z          | float | 是   | Z 轴移动大小                                                                 |
 | relativeTo | Space | 否   | 相对的坐标系，默认 `Space.Self`<br />`Space.Self`：局部坐标系<br />`Space.World`：世界坐标系 |
 
-## 示例
-
-指定向量进行移动
+~~~admonish example title="示例：指定向量进行移动"
 
 ```csharp
 using UnityEngine;
@@ -45,6 +43,9 @@ public class ExampleClass : MonoBehaviour
     }
 }
 ```
+~~~
+
+~~~admonish example title="示例：指定各轴大小进行移动"
 
 指定各轴大小进行移动
 
@@ -65,8 +66,11 @@ public class ExampleClass : MonoBehaviour
     }
 }
 ```
+~~~
 
 除了 `Space.Self` 和 `Spcae.World` 还可以使用例如 `Camera.main.transform` 来实现相对座标系的移动。
+
+~~~admonish example title="示例：相对座标系移动"
 
 ```csharp
 using UnityEngine;
@@ -82,3 +86,4 @@ public class ExampleClass : MonoBehaviour
     }
 }
 ```
+~~~

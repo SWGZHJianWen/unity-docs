@@ -16,7 +16,7 @@ public bool SimpleMove(Vector3 speed);
 |:----- |:------- |:--- |:------------------------------ |
 | speed | Vector3 | 是   | 各方向移动速度，单位为 `units/s`，Y 轴会被忽略。 |
 
-## 示例
+~~~admonish example title="示例"
 
 简单的人物控制器，左右键旋转，前后键移动。
 
@@ -48,3 +48,4 @@ public class ExampleScript : MonoBehaviour
     }
 }
 ```
+~~~

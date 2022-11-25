@@ -24,8 +24,8 @@ public static float Range(float minInclusive, float maxInclusive);
 | minInclusive | float | 是   | 最小值 |
 | maxInclusive | float | 是   | 最大值 |
 
-## 示例
 
+~~~admonish example title="示例"
 点击按钮后，随机在 `([-10 ~ 10], 0, [-10 ~ 10])` 的位置生成物体
 
 ```csharp
@@ -45,3 +45,4 @@ public class ExampleScript : MonoBehaviour
     }
 }
 ```
+~~~

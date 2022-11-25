@@ -12,7 +12,7 @@ public static Vector3 Normalize(Vector3 value);
 |:----- |:------- |:--- |:------ |
 | value | Vector3 | 是   | 待归一化向量 |
 
-~~~admonish
+~~~admonish example title="示例"
 ```csharp
 using UnityEngine;
 

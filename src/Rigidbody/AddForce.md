@@ -24,9 +24,7 @@ public void AddForce (float x, float y, float z, ForceMode mode = ForceMode.Forc
 | z    | float     | 是   | 沿世界 z 轴的力大小                                                                                                                                                                                                               |
 | mode | ForceMode | 否   | 施加力的模式，默认 `ForceMode.Force`<br />`ForceMode.Force`：利用刚体的质量向刚体添加一个连续的力<br />`ForceMode.Acceleration`：向刚体添加一个连续的加速度，忽略它的质量<br />`ForceMode.Impulse`：利用刚体的质量向刚体添加一个瞬时的力<br />`ForceMode.VelocityChange`：给刚体添加一个瞬时的加速度，忽略它的质量 |
 
-## 示例
-
-使用表示力方向和大小的矢量：
+~~~admonish example title="示例：使用表示力方向和大小的矢量"
 
 ```csharp
 using UnityEngine;
@@ -51,8 +49,9 @@ public class ExampleScript : MonoBehaviour
     }
 }
 ```
+~~~
 
-指定 `x`、`y`、`z`各轴的大小：
+~~~admonish example title="示例：指定 x、y、z 各轴的大小"
 
 ```csharp
 using UnityEngine;
@@ -71,5 +70,5 @@ public class Example : MonoBehaviour
     }
 }
 ```
-
+~~~
    

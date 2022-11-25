@@ -22,9 +22,7 @@ public void LookAt (Vector3 worldPosition, Vector3 worldUp = Vector3.up);
 | worldPosition | Transform | 是   | 要对准的点              |
 | worldUp       | Vector3   | 否   | 指定向上方向的向量，默认世界 Y 轴 |
 
-## 示例
-
-相机看向物体：
+~~~admonish example title="示例：相机看向物体"
 
 ```csharp
 using UnityEngine;
@@ -44,6 +42,9 @@ public class ExampleClass : MonoBehaviour
     }
 }
 ```
+~~~
+
+~~~admonish example title="示例：相机看向某一点"
 
 看向某一点：
 
@@ -62,3 +63,4 @@ public class ExampleClass : MonoBehaviour
     }
 }
 ```
+~~~

@@ -12,7 +12,7 @@
 public static float timeScale;
 ```
 
-## 示例
+~~~admonish example title="示例"
 
 对 [Time.deltaTime](./deltaTime.md) 中示例的补充，添加了一个滑块控制时间的流逝速度。
 
@@ -56,3 +56,4 @@ public class ExampleScript : MonoBehaviour
     }
 }
 ```
+~~~

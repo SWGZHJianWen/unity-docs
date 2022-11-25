@@ -12,8 +12,7 @@ public static bool GetMouseButtonDown(int button);
 |:------ |:--- |:--- |:------------------------------------------ |
 | button | int | 是   | 按键对应数字<br>`0`：鼠标左键<br>`1`：鼠标右键<br>`2`：鼠标中键 |
 
-## 示例
-
+~~~admonish example title="示例"
 ```csharp
 using UnityEngine;
 
@@ -31,4 +30,5 @@ public class ExampleScript : MonoBehaviour
             Debug.Log("已抬起鼠标左键");
     }
 }
+```
 ```

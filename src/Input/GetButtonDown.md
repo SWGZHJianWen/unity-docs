@@ -14,8 +14,7 @@ public static bool GetButtonDown(string buttonName);
 
 ![Input Manager](./images/input_manager.png)
 
-## 示例
-
+~~~admonish example title="示例"
 ```csharp
 using UnityEngine;
 
@@ -49,3 +48,4 @@ public class ExampleScript : MonoBehaviour
     }
 }
 ```
+~~~

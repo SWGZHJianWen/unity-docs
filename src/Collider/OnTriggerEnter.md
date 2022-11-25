@@ -12,7 +12,7 @@ private void OnTriggerEnter(Collider other)
 |:----- |:-------- |:------------------------ |
 | other | Collider | 该碰撞中涉及的其他碰撞体（`Collider`） |
 
-## 示例
+~~~admonish example title="示例"
 
 演示了 [OnTriggerEnter](./OnTriggerEnter.md)、[OnTriggerStay](./OnTriggerStay.md)、[OnTriggerExit](./OnTriggerExit.md) 的基本用法。
 
@@ -66,3 +66,4 @@ public class ExampleScript : MonoBehaviour
     }
 } 
 ```
+~~~

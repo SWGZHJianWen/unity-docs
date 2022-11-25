@@ -20,8 +20,7 @@ public static bool GetKey(KeyCode key);
 |:--- |:------- |:--- |:--------------------------------------------- |
 | key | KeyCode | 是   | 按键对应字符串名称，详见 [附录 #按键代码表](./appendix.md#按键代码表) |
 
-## 示例
-
+~~~admonish example title="示例"
 ```csharp
 using UnityEngine;
 
@@ -44,3 +43,4 @@ public class ExampleScript : MonoBehaviour
     }
 }
 ```
+~~~

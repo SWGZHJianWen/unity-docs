@@ -16,7 +16,7 @@ public static void DrawLine (Vector3 start, Vector3 end, Color color= Color.whit
 | duration  | float   | 否   | 直线的可见时间，单位秒，默认 `0`，即一帧 |
 | depthTest | bool    | 否   | 直线是否会被遮挡，默认是           |
 
-## 示例
+~~~admonish example title="示例"
 
 ```csharp
 using UnityEngine;
@@ -45,3 +45,4 @@ public class ExampleScript : MonoBehaviour
     }
 }
 ```
+~~~

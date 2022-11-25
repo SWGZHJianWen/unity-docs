@@ -13,7 +13,7 @@ public static float Distance(Vector3 a, Vector3 b);
 | a   | Vector3 | 是   | a 点 |
 | b   | Vector3 | 是   | b 点 |
 
-~~~admonish example
+~~~admonish example title="示例"
 ```csharp
 using UnityEngine;
 

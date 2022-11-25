@@ -34,7 +34,7 @@ public void Rotate(Vector3 axis, float angle, Space relativeTo = Space.Self);
 | angle      | float   | 是   | 旋转角度                                                                    |
 | relativeTo | Space   | 否   | 相对的坐标系，默认 `Space.Self`<br />`Space.Self`：局部坐标系<br />`Space.World`：世界坐标系 |
 
-## 示例
+~~~admonish example title="示例"
 
 该示例代码创建了两个不同的立方体：红色立方体按照局部座标系 `Space.Self` 旋转；绿色立方体按照世界座标系 `Space.World` 旋转。
 
@@ -72,3 +72,4 @@ public class ExampleScript : MonoBehaviour
     }
 }
 ```
+~~~

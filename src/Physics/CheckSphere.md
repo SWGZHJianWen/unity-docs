@@ -20,7 +20,7 @@ public static bool CheckSphere(
 | layerMask               | int                     | 否   | 层级蒙版，设定后只检测此层级中的物体是否相交                                                                                                                                                                                            |
 | queryTriggerInteraction | QueryTriggerInteraction | 否   | 指定该查询是否触发触发器，默认 `QueryTriggerInteraction.UseGlobal`<br />`QueryTriggerInteraction.UseGlobal`：使用 `Physics.queriesHitTriggers` 设置<br />`QueryTriggerInteraction.Ignore`：忽略<br />`QueryTriggerInteraction.Colide`：触发 |
 
-## 示例
+~~~admonish example title="示例"
 
 ```csharp
 using UnityEngine;
@@ -44,3 +44,4 @@ public class ExampleScript : MonoBehaviour
     }
 }
 ```
+~~~

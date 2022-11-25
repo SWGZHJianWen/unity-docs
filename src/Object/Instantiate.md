@@ -34,8 +34,8 @@ public static Object Instantiate(
 | rotation | Quaternion | 是   | 新对象的旋转   |
 | parent   | Transform  | 否   | 新对象的父对象  |
 
-## 示例
 
+~~~admonish example title="示例"
 ```csharp
 using UnityEngine;
 
@@ -51,3 +51,4 @@ public class Example : MonoBehaviour
     }
 }
 ```
+~~~

@@ -12,7 +12,7 @@ public static T Load(string path);
 |:---- |:------ |:--- |:---- |
 | path | string | 是   | 资产路径 |
 
-## 示例
+~~~admonish example title="示例"
 
 ```csharp
 using UnityEngine;
@@ -39,11 +39,14 @@ public class ExampleScript : MonoBehaviour
     }
 }
 ```
+~~~
 
 ## 补充
 
+~~~admonish info title="注意事项"
 1. 用 `Resources` 加载的资源，只能位于 `Assets/Resources/` 文件夹下。
 2. 传入路径用 `/` 表示子文件夹
 3. `Resources` 加载资源的相关代码最好在打开场景时进行加载。
 4. `Resources` 加载资源的方式时只读的，在游戏打包后就无法对文件内容进行修改。
 5. 游戏打包导出时，`Resources` 目录下的文件，不论是否在游戏中使用，都会被打包到游戏中增加体积，因此应该尽量控制 `Resources` 目录下的文件数量
+~~~

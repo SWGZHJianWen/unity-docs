@@ -8,7 +8,7 @@
 public static float time;
 ```
 
-## 示例
+~~~admonish example title="示例"
 
 与 [Time.deltaTime](./deltaTime.md) 中的示例不同，此处使用 `Time.time` 实现了一个新的倒数计时器，并且可以控制计数间隔
 
@@ -46,3 +46,4 @@ public class ExampleScript : MonoBehaviour
     }
 }
 ```
+~~~

@@ -13,7 +13,7 @@ public static void LogWarning (object message, Object context);
 | message | object | 是   | 字符串或对象，将被转换为字符串表示进行显示 |
 | context | Object | 否   | 此消息应用到的对象             |
 
-## 示例
+~~~admonish example title="示例"
 
 ```csharp
 using UnityEngine;
@@ -32,3 +32,4 @@ public class ExampleScript : MonoBehaviour
     }
 }
 ```
+~~~

@@ -14,7 +14,7 @@ public CollisionFlags Move(Vector3 motion);
 |:------ |:------- |:--- |:----------- |
 | motion | Vector3 | 是   | 各方向移动的绝对增量值 |
 
-## 示例
+~~~admonish example title="示例"
 
 一个简单的第一人称控制器
 
@@ -58,3 +58,4 @@ public class ExampleScript : MonoBehaviour
     }
 }
 ```
+~~~

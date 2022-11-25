@@ -22,7 +22,8 @@ public static Quaternion Euler (Vector euler);
 |:----- |:------- |:--- |:------------------ |
 | euler | Vector3 | 是   | 表示 X、Y、Z 三轴旋转度数的向量 |
 
-```admonish
+
+~~~admonish example title="示例"
 ```csharp
 using UnityEngine;
 
@@ -40,3 +41,4 @@ public class Example : MonoBehaviour
     }
 }
 ```
+~~~

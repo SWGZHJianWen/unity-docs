@@ -12,7 +12,7 @@ public bool SetDestination (Vector3 target);
 |:------ |:------- |:--- |:----- |
 | target | Vector3 | 是   | 目的地坐标 |
 
-## 示例
+~~~admonish example title="示例"
 
 ```csharp
 using UnityEngine;
@@ -46,3 +46,4 @@ public class ExampleScript : MonoBehaviour
     }
 }
 ```
+~~~

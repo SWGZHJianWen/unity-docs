@@ -8,7 +8,7 @@
 public bool isGrounded;
 ```
 
-## 示例
+~~~admonish example title="示例"
 
 这是对 [CharacterController.Move](./Move.md) 中示例的补充，添加了跳跃功能。
 
@@ -72,10 +72,12 @@ public class ExampleScript : MonoBehaviour
     }
 }
 ```
+~~~
 
-## 补充
 
+~~~admonish warning title="注意"
 上述示例也许并不好用，因为 `isGrounded` 只有角色移动时（调用 `SimpleMove` 或 `Move`时）才会进行检测，并且 `CharacterController` 的 `Skin Width` 也会对其影响。
+~~~
 
 建议自己实现地面检测功能，方法有多种，这里使用最简单的 `Raycast`，关于 `Raycast` 的用法在 [Physics/Raycast](../Physics/Raycast.md) 中有介绍。
 
